@@ -2,8 +2,9 @@
 
 ## Important Links
 
-- https://vrundabhatt.com/aau/wnm617/bhatt.vrunda
+- http://vrundabhatt.com/aau/wnm617/bhatt.vrunda
 
-Module 2 homework
+- http://vrundabhatt.com/aau/wnm617/initializr
 
-- https://vrundabhatt.com/aau/wnm617/initializr
+- http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/DogInThePark.pdf
+
