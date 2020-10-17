@@ -4,7 +4,7 @@
 
 http://vrundabhatt.com/aau/wnm617/bhatt.vrunda
 
-http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/initializr
+http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/initializr/initializr.html
 
 http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/Doginthepark.pdf
 
