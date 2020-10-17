@@ -1,4 +1,8 @@
-
+.on("click", ".error-button", function(){
+        $("#login-error-msg").removeClass("active");
+        $("#signin-email").val("");
+        $("#signin-password").val("");
+    })
 
 // Document Ready
 $(()=>{
@@ -26,7 +30,11 @@ $(()=>{
    })
 
 
-
+.on("click", ".error-button", function(){
+        $("#login-error-msg").removeClass("active");
+        $("#signin-email").val("");
+        $("#signin-password").val("");
+    })
 
 
 
@@ -45,6 +53,30 @@ $(()=>{
 
 
 })
+
+$(document).on("submit","#signin-form", function(e){
+    e.preventDefault();
+    checkSigninForm();
+  })
+
+
+
+   $("[data-template]").each(function(){
+      let target = $(this).data("template");
+      let template = $(target).html();
+      $(this).html(template);
+   })
+
+
+
+
+
+.on("click", ".js-logout", function(e){
+    sessionStorage.removeItem('userId');
+    $(".login-error").removeClass("active");
+    
+    checkUserId();
+  })
 
 
 

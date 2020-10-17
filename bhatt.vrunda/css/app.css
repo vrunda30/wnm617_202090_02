@@ -20,6 +20,7 @@
    --color-neutral-dark: #304830;
 
    --color-main-light: #324759;
+   --color-LI:#f9c056;
 ;
    --color-main-medium: #6dd21d;
    --color-main-dark: #234905;
@@ -64,6 +65,15 @@ a:hover {
 
 
 
+.add-icon{
+    width: 15%;
+    /* display: block; */
+    position: relative;
+    top: 20%;
+    left: 85%;
+    padding: 8px;
+
+}
 
 
 /* Layout Classes */
@@ -72,47 +82,46 @@ a:hover {
 .hidden { display:none; }
 
 
-.display-flex { display:flex;
-               margin-top: 1em;}
+
+
+
+
+.display-flex { display:flex; margin-top: 0; margin-bottom: 0; padding-bottom: 0;}
+.display-block { display:block; }
+.display-inline-flex { display:inline-flex; }
+.display-inline-block { display:inline-block; }
 
 .display-inline-flex { display:inline-flex; }
 .display-inline-block { display:inline-block; }
 
-.flex-stretch { flex: 1 1 auto; 
-                margin-top: 1em;}
+.flex-stretch { flex: 1 1 auto; }
 .flex-none { flex:none; }
+
+
+.flex-column{flex-direction:column; margin-bottom: 0; margin-top: 0;}
+.flex-row{flex-direction:row;}
 
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center
   ; }
+.flex-column { flex-direction:column; margin-bottom: 0; }
 
-.flex-column { flex-direction:column; }
 
-.overscroll {
-   width: 100%;
-   height: 100%;
-   overflow: auto;
+
+.pro-title{
+text-align: center;
+font: bold 18px Roboto;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba (0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  justify-content: center;
-  float: left;
-  
-}
-
-.container h1,h2{
-  font-size: 0.8em;
-  padding: 0.1em;
-  text-align: center;
-
-}
  
-.card2{
-  float: left;
+
+.display-flex h2{
+  margin bottom: 3em;
 }
+
 
 
 
@@ -161,38 +170,59 @@ a:hover {
 
 }
 
-
-
-
-
-
 #signup-form{
   padding-top: 50%;
 }
-
-
 
 
 #signin-form,
 #signup-form {
    padding:1em;
 }
+
 .signin-alt {
    padding:1em;
    text-align:center;
    font-size:0.8em;
    font color: #ECF2F8; 
 }
+
 #recent-page [data-role='main'] {
    background-image:url(../images/map.jpg);
    background-position:center;
    background-size:cover;
+
 }
 
-#doginthepark{
-  margin-top: 0.10em;
+
+
+
+
+
+.signin-error{
+    text-align: center;
+    opacity: 70%;
+    line-height: 1px;
+    /* padding-top: 10px; */
+    padding-top: 0; 
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    position: relative;
+    
 }
 
+.signin-error.active{
+   color: #008890;
+  opacity: 15;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.signin-error p{
+    color: #008890;
+    font: bold 25px;
+}
 
 
 
@@ -214,6 +244,14 @@ a:hover {
    position:relative;
 }
 
+[data-role='main'] h2 {
+   flex: 1 1 100%;
+   overflow:hidden;
+   position:relative;
+   text-align: center;
+   margin-top: 20px;
+   font color: #476c35;
+}
 
 .ui-header,
 .ui-footer {
@@ -223,24 +261,166 @@ a:hover {
    border-width:0;
    background-color:var(--color-white);
    box-shadow:0 0 5px rgba(0,0,0,0.15);
-
    overflow:hidden;
-   position:relative;
+   position: relative;
 }
 .ui-header .ui-title {
-   margin:0;
-   padding:0;
    position:absolute;
-   top:0;
+   top: 20%;
    left:0;
    width:100%;
    text-align:center;
 }
 
 
+.footer-icon{
+   width: 30%;
+   text-align: center;
+}
+
+.ui-footer{
+   box-shadow:0px -4px 5px 0px rgb(132 122 103 / 23%);
+   align-items: center;
+   padding-top: 0.8em;
+   height: 7%;
+
+}
 
 
 
+
+
+/* Dog list */
+
+.add-icon{
+  box-shadow: 0px -4px 5px 0px rgb(132 122 103 / 23%);
+}
+
+
+
+
+
+.overscroll {
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+}
+
+.search{
+  display: inline-block;
+  width: 12em;
+  height: 1.1em;
+  position: relative;
+  align-items: center;
+}
+
+.search input{
+  position: absolute;
+  width: inherit;
+    height: inherit;
+    border-width: 2px;
+    border-radius: 14px;
+    background-color: var(--color-white);
+    outline: 2px;
+    font-size: 0.8em;
+    /*padding-left: 30px;*/
+    text-align: center;
+}
+
+.search > i{
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background: url(../images/iconSearch.svg) no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.6em;
+}
+
+
+.search-bar{
+
+    width: 80%;
+    border: solid 3px var(--color-neutral-medium);
+    padding: 0 5px;
+    border-radius: 50px;
+    margin-left: 30px;
+    align-items: center;
+    height: 30%;
+     margin-top: 25px;
+
+}
+
+.search-bar input,
+.search-bar input:active{
+   border:none;
+   outline: none;
+   
+
+}
+
+.search-bar img{
+   width: 6%;
+   margin-right: 2px;
+   margin-left: 5px;
+   margin-top: 5px;
+}
+
+
+
+
+
+
+.animal-list{
+   
+   padding:0;
+   margin:0;
+   margin-bottom: 10em;
+   margin-top: 0;
+}
+
+
+
+.animal-list li{
+   background-color: #fcfaf7;
+   margin-bottom:5px;
+   display: flex;
+   padding: 5px 0;
+   border-radius: 5px;
+   box-shadow: 0px 3px 6px #6a625424;
+}
+.animal-list li a{
+    display: flex;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.animal-list li p{
+   padding: 5px;
+
+}
+
+.animal-list-img{        
+   max-width: 25%;
+   border-radius: 50%;
+   margin-right: 15px;
+   object-fit: cover;
+}
+
+
+.ui-header{
+    background-color: #f9c056;
+}
+
+.ui-header .ui-title {
+    margin: 0;
+    top: 0;
+    left: 0;
+    /*width: 100%;*/
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 2em;
+}
 
 
 .ui-header ul,
@@ -262,6 +442,28 @@ a:hover {
 }
 
 
+
+/* Add dog profile */
+
+
+/* dog profile */
+
+
+.profile-image img {
+    border-radius: 50%;
+    width: calc(70vw - 4em);
+    height: calc(70vw - 4em);
+    object-fit: cover;
+    margin: 0em;
+}
+
+
+
+
+
+
+
+
 /* MODALS */
 .modal {
     position: absolute;
@@ -271,6 +473,7 @@ a:hover {
     transition: all 0.3s;
     opacity: 0;
     pointer-events: none;
+    
 }
 .modal.active {
    opacity:1;
@@ -285,7 +488,7 @@ a:hover {
 
 /* MODAL POPUP*/
 .modal-popup {
-   position:absolute;
+   
    top:50%;
    left:50%;
    transform:translate(-50%,calc(-50% + 3em));
@@ -361,6 +564,24 @@ a:hover {
 
 
 
+/*Modal Tost*/
+
+.modal-toast {
+  position: absolute;
+  width: 50%;
+  background-color: #f9c056;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.15);
+  border-radius: 0.2em;
+  padding: 1em;
+  text-align: center;
+  left: 50%;
+  transition: all 0.3s;
+  transform: translate(-50%,1em);
+}
+
+
+
+
 
 
 /* FLOATER */
@@ -382,6 +603,87 @@ a:hover {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     font-size: 1.5em;
 }
+
+
+
+/* User Profile */
+
+
+.profile-image img {
+    border-radius: 50%;
+    width: calc(70vw - 4em);
+    height: calc(70vw - 4em);
+    object-fit: cover;
+    margin: 0em;
+}
+
+
+h2{
+  margin-top: 0em;
+}
+
+.description li:not(:last-child) {
+  margin-top: 0.2em;
+  list-style-type:none;
+}
+
+.page-side-padding{
+  margin-top: 0.2em;
+  padding: 5%;
+}
+
+.profile-text{
+  padding-top: 10px;
+  padding-bottom: 12px;
+  color: red;
+  text-align: left;
+font: normal normal normal 14px/16px Roboto;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+list-style-type:none;
+}
+
+.pro-li{
+  padding-top: 1em;
+}
+
+.settings-list {
+   list-style-type:none;
+   margin: 0px;
+   padding: 0px;
+
+}
+
+.settings-item a {
+   display:block;
+   padding:0.5em 1em;
+   border-bottom:1px solid var(--color-main-orange);
+   position:relative;
+}
+.settings-item a:not([href='#'])::after {
+   content:'>';
+   position:absolute;
+   top:50%;
+   right:1em;
+   transform:translateY(-50%);
+}
+
+.form-label {
+    font-size: 0.8em;
+    color: var(--color-font);
+    margin: 0.5rem 0;
+}
+
+
+/*Animal Profile*/
+
+
+
+
+
+
+
 
 
 

@@ -4,8 +4,8 @@
 
 http://vrundabhatt.com/aau/wnm617/bhatt.vrunda
 
-http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/initializr.html
+http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/initializr
 
-http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/DogInThePark.pdf
+http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/Doginthepark.pdf
 
-http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/doginpark.html
+http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/index.html
