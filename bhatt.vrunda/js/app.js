@@ -1,10 +1,6 @@
-.on("click", ".error-button", function(){
-        $("#login-error-msg").removeClass("active");
-        $("#signin-email").val("");
-        $("#signin-password").val("");
-    })
 
-// Document Ready
+
+// Docu ment Ready
 $(()=>{
 
    checkUserId();
@@ -27,15 +23,8 @@ $(()=>{
    .on("click",".js-logout",function(e){
       sessionStorage.removeItem('userId');
       checkUserId();
+    
    })
-
-
-.on("click", ".error-button", function(){
-        $("#login-error-msg").removeClass("active");
-        $("#signin-email").val("");
-        $("#signin-password").val("");
-    })
-
 
 
    .on("click","[data-activate]",function(){
@@ -50,14 +39,7 @@ $(()=>{
       let target = $(this).data('toggle');
       $(target).toggleClass("active");
    })
-
-
-})
-
-$(document).on("submit","#signin-form", function(e){
-    e.preventDefault();
-    checkSigninForm();
-  })
+   ;
 
 
 
@@ -67,21 +49,4 @@ $(document).on("submit","#signin-form", function(e){
       $(this).html(template);
    })
 
-
-
-
-
-.on("click", ".js-logout", function(e){
-    sessionStorage.removeItem('userId');
-    $(".login-error").removeClass("active");
-    
-    checkUserId();
-  })
-
-
-
-
-
-
-	
-
+})

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 4</title>
+    <g id="Page-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Map-Copy-2" transform="translate(-297.000000, -810.000000)">
+            <g id="Group-4" transform="translate(297.000000, 810.000000)">
+                <path d="M21,3.5 C11.33125,3.5 3.5,11.33125 3.5,21 C3.5,30.66875 11.33125,38.5 21,38.5 C30.66875,38.5 38.5,30.66875 38.5,21 C38.5,11.33125 30.66875,3.5 21,3.5 Z M21,8.75 C23.89625,8.75 26.25,11.10375 26.25,14 C26.25,16.905 23.89625,19.25 21,19.25 C18.10375,19.25 15.75,16.905 15.75,14 C15.75,11.10375 18.10375,8.75 21,8.75 Z M21,33.6 C16.61625,33.6 12.76625,31.36 10.5,27.965 C10.54375,24.49125 17.50875,22.575 21,22.575 C24.49125,22.575 31.4475,24.49125 31.5,27.965 C29.23375,31.36 25.38375,33.6 21,33.6 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <polygon id="Path" points="0 0 42 0 42 42 0 42"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
