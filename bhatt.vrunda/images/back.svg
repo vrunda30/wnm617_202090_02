@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="24px" viewBox="0 0 14 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow-left</title>
+    <g id="Page-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-Copy-2" transform="translate(-32.000000, -50.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="arrow-left" transform="translate(32.000000, 50.000000)">
+                <path d="M12.6285714,1.09028571 C13.2988571,1.76057143 13.2988571,2.84571429 12.6285714,3.51428571 L4.14285714,12 L12.6285714,20.4857143 C13.2988571,21.156 13.2988571,22.2411429 12.6285714,22.9097143 C11.9582857,23.5782857 10.8731429,23.58 10.2045714,22.9097143 L0.506857143,13.212 C-0.163428571,12.5417143 -0.163428571,11.4565714 0.506857143,10.788 L10.2045714,1.09028571 C10.8748571,0.42 11.96,0.42 12.6285714,1.09028571 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

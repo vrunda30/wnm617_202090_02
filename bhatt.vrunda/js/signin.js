@@ -1,5 +1,17 @@
 
 
+
+
+const makeWarning = (target,message) => {
+   $(target).addClass("active")
+      .find(".message").html(message);
+   setTimeout(()=>{
+      $(target).removeClass("active")
+   },2000);
+}
+
+
+
 const checkSigninForm = () => {
    let user = $("#signin-username").val();
    let pass = $("#signin-password").val();
@@ -43,14 +55,6 @@ const checkUserId = () => {
    }
 }
 
-
-const makeWarning = (target,message) => {
-   $(target).addClass("active")
-      .find(".message").html(message);
-   setTimeout(()=>{
-      $(target).removeClass("active")
-   },2000);
-}
 
 
 

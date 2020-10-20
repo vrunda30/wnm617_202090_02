@@ -21,64 +21,73 @@
 
 
 <!-- Sign in -->
-
 <section data-role="page" id="signin-page">
        
     <div data-role="main" >
 
         <div><img src="images/logo.png" class="logo">
         </div>
-            
-            <form id="signin-form" data-ajax="false">
+          
+          <form id="signin-form" data-ajax="false">
                 
                <div class="card">
-                     <div class="form-control">
-                        <input id="signin-username" type="text" class="form-input" data-role="none" placeholder="Email">
+                    <div class="form-control">
+                      <label class="form-label">username</label>
+                      <input id="signin-username" type="text" class="form-input" data-role="none" placeholder="username">
                     </div>
 
                  
-                     <div class="form-control">
-                        <input id="signin-password" type="current-password" class="form-input" data-role="none" placeholder="Password">
-                     </div>
+                    <div class="form-control">
+                        <label class="form-label">password</label>
+                      <input id="signin-password" type="current-password" class="form-input" data-role="none" placeholder="Password">
+                    </div>
 
-                     <div class="form-control">
-                        <input type="submit" class="form-button" value="Sign-in" data-role="none">
-                     </div>
+                    <div class="form-control">
+                       <input type="submit" class="form-button" value="Sign-in" data-role="none">
+                    </div>
                 
-                   <div class="form-control signin-alt">
-                        Don't have an account?
-                       <a href="#signup-page">Sign-up</a>
-                   </div>
-               </div>
+                  <div class="form-control signin-alt">
+                       Don't have an account?
+                      <a href="#signup-page">Sign-up</a>
+                  </div>
+              </div>
           </form>
-
-
-
     </div>
+
+    <div class="modal" id="warning-modal">
+      <div class="modal-toast top" data-deactivate="warning-modal">
+        <div class="message">...</div>
+      </div>
+    </div>
+
+
 </section>
 
 <!-- Sign up -->
 
 
    <section data-role="page" id="signup-page">
-       
+     
       <div data-role="main">
         
-         <div><img src="images/logo.png" class="logo"></div>
+          <div><img src="images/logo.png" class="logo"></div>
           <form id="signup-form" data-ajax="false">
-         <div class="card2">
-         
+          <div class="card">
+          
         
            
             <div class="form-control">
-               <input id="signup-username" type="text" class="form-input" data-role="none" placeholder="Email">
+              <label class="form-label">username</label>
+               <input id="signup-username" type="text" class="form-input" data-role="none" placeholder="username">
             </div>
             
             <div class="form-control">
+              <label class="form-label">password</label>
                <input id="signup-password" type="password" class="form-input" data-role="none" placeholder="Password">
             </div>
             
             <div class="form-control">
+              <label class="form-label">re-enter password</label>
                <input id="signup-password-confirm" type="password" class="form-input" data-role="none" placeholder="Re-enter password">
             </div>
             
@@ -103,29 +112,22 @@
 
 
 <section data-role="page" id="recent-page" style="background-color: #F3F2F7">
-    
-
       <header data-role="header">
         <ul>
           <li>Find dogs</li>
-          <li class="icon"><img src="images/add2.svg"></li>
+         <!--  <li class="icon"><img src="images/add2.svg"></li> -->
         </ul>    
       </header>
-  
          <div data-role="main" class="map-container">
            <div class="overscroll"><img src="images/map.png"></div>
-           
-
          </div>
-
-            <footer data-role="footer">
+      <footer data-role="footer">
               <ul>
                 <li><a href="#recent-page"><img src="images/loc.svg" class="footer-icon"></a></li>
                 <li><a href="#list-page"> <img src="images/paw.svg" class="footer-icon"></a></li>
                 <li><a href="#user-profile-page"> <img src="images/pro.svg" class="footer-icon"></a></li> 
-                </ul>
-            </footer>
-
+              </ul>
+      </footer>
 </section>
 
 
@@ -146,25 +148,25 @@
              <div class="overscroll">
                 <ul class="display-flex flex-justify-around">
                     <li>
-                        <a href="#animal-profile-page">
+                        <a href="#dog-profile-page">
                             <figure>
-                                <img src="images/dog1.svg" alt="Beagle">
+                                <img src="images/dog1.png" alt="Beagle">
                             </figure>
                             <figcaption><a href="#dog-profile-page">Diego</a></figcaption>
                            
                         </a>
                     </li>
                     <li>
-                        <a href="#animal-profile-page">
+                        <a href="#dog-profile-page">
                             <figure>
-                                <img src="images/dog5.png" alt="Beagle">
+                                <img src="images/dog2.png" alt="Beagle">
                             </figure>
                             <figcaption>Diego</figcaption>
                            
                         </a>
                     </li>
                     <li>
-                        <a href="#animal-profile-page">
+                        <a href="#dog-profile-page">
                              <figure>
                                 <img src="images/dog3.png" alt="Beagle">
                             </figure>
@@ -173,7 +175,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#animal-profile-page">
+                        <a href="#dog-profile-page">
                              <figure>
                                 <img src="images/dog4.png" alt="Beagle">
                             </figure>
@@ -182,18 +184,18 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#animal-profile-page">
+                        <a href="#dog-profile-page">
                             <figure>
-                                <img src="images/dog1.svg" alt="Beagle">
+                                <img src="images/dog5.png" alt="Beagle">
                             </figure>
                             <figcaption>Diego</figcaption>
                             
                         </a>
                     </li>
                     <li>
-                        <a href="#animal-profile-page">
+                        <a href="#dog-profile-page">
                             <figure>
-                                <img src="images/dog1.svg" alt="Beagle">
+                                <img src="images/dog6.png" alt="Beagle">
                             </figure>
                             <figcaption>Diego</figcaption>
                           
@@ -201,21 +203,21 @@
                     </li>
 
                       <li>
-                        <a href="#animal-profile-page">
+                        <a href="#dog-profile-page">
                             <figure>
-                                <img src="images/dog1.svg" alt="Beagle">
+                                <img src="images/dog7.png" alt="Beagle">
                             </figure>
                             <figcaption>Diego</figcaption>
                            
                         </a>
                     </li>
                       <li>
-                        <a href="#animal-profile-page">
+                       <a href="#dog-profile-page">
                             <figure>
-                                <img src="images/dog1.svg" alt="Beagle">
+                                <img src="images/dog8.png" alt="Beagle">
                             </figure>
                             <figcaption>Diego</figcaption>
-                            
+                           
                         </a>
                     </li>
                 </ul>
@@ -232,21 +234,30 @@
                   <li><a href="#user-profile-page"> <img src="images/pro.svg" class="footer-icon"></a></li> 
                 </ul>
           </footer>
-            
+
+
+
+
           <div class="modal" id="list-add-modal">
               <div class="modal-back" data-deactivate="#list-add-modal"></div>
                   <div class="modal-popup">
                       <div class="modal-card">
-                        <div class="modal-head">Add Dog</div>
-                        
-                         <div class="modal-body">Dog name </div>
+                        <div class="modal-head">Add dog</div>
                         <div class="form-control">
-                      <input id="dog-name" type="text" class="form-input" data-role="none" placeholder="Dog name"></div>
-                   
-                       
-                         <div class="form-control">
-                      <input id="dog-name" type="text" class="form-input" data-role="none" placeholder="Dog breed"></div>
-                        <div class="modal-foot">Save</div>
+                          <label class="form-label">dog name</label>
+                          <input id="dogname" type="text" class="form-input" data-role="none" placeholder="Name the dog">
+                        </div>
+                        <div class="form-control">
+                          <label class="form-label">breed</label>
+                          <input id="breed" type="text" class="form-input" data-role="none" placeholder="What breed is the dog?">
+                        </div>
+                        <div class="form-control">
+                          <label class="form-label">notes</label>
+                          <input id="notes" type="text" class="form-input" data-role="none" placeholder="Describe the dog">
+                        </div>
+                        <div class="form-control">
+                          <input type="submit" class="cancel-button" value="Cancel" data-role="none">
+                          <input type="submit" class="save-button" value="Save" data-role="none">
                       </div>
                    </div>
           </div>
@@ -276,7 +287,7 @@
               </ul>
           
               <ul>
-                 <li class="setting setting-blacktext"><a href="#signin-page">Change password</a></li>
+                 <li class="setting setting-blacktext"><a href="#" data-activate="#change-password-modal">Change password</a></li>
                  <li class="setting setting-redtext"><a href="#" class="js-logout">Logout</a></li>
                </ul>
             </div> 
@@ -296,13 +307,46 @@
                   <div class="modal-popup">
                       <div class="modal-card">
                         <div class="modal-head">Edit profile</div>
-                        <div class="modal-body">Name</div>
-                         <div class="modal-body">Email</div>
-                        <div class="modal-foot">Save</div>
+                        <div class="form-control">
+                          <label class="form-label">username</label>
+                          <input id="name" type="text" class="form-input" data-role="none" placeholder="username">
+                        </div>
+                         <div class="form-control">
+                          <label class="form-label">email</label>
+                          <input id="email" type="text" class="form-input" data-role="none" placeholder="email id">
+                        </div>
+                         <div class="form-control">
+                          <input type="submit" class="cancel-button" value="Cancel" data-role="none">
+                          <input type="submit" class="save-button" value="Save" data-role="none">
+                      </div>
                       </div>
                    </div>
           </div>
 
+
+          <div class="modal" id="change-password-modal">
+              <div class="modal-back" data-deactivate="#change-password-modal"></div>
+                  <div class="modal-popup">
+                      <div class="modal-card">
+                        <div class="modal-head">Change password</div>
+                        <div class="form-control">
+                          <label class="form-label">current password</label>
+                          <input id="current-password" type="current-password" class="form-input" data-role="none" placeholder="Password">
+                        </div>
+                        <div class="form-control">
+                          <label class="form-label">new password</label>
+                          <input id="new-password" type="new-password" class="form-input" data-role="none" placeholder="New password">
+                        </div>
+                        <div class="form-control">
+                          <label class="form-label">new password</label>
+                          <input id="new-password" type="new-password" class="form-input" data-role="none" placeholder="Re-enter password">
+                        </div>
+                        <div class="form-control">
+                          <input type="submit" class="cancel-button" value="Cancel" data-role="none">
+                          <input type="submit" class="save-button" value="Save" data-role="none">
+                      </div>
+                   </div>
+          </div>
 
 </section>
 
@@ -312,8 +356,9 @@
      
           <header data-role="header">
               <ul>
+                <li class=""><a href="#list-page"><img src="images/back.svg"></a></li>
                  <li>Diego</li>
-                  <li class="icon"><img src="images/edit.svg"></li>
+                  <li class="icon"><a href="#" data-activate="#edit-dog-profile"><img src="images/edit.svg"></a></li>
               </ul> 
           </header>
 
@@ -328,6 +373,32 @@
           
             </div> 
 
+          </div>
+
+
+
+          <div class="modal" id="edit-dog-profile">
+              <div class="modal-back" data-deactivate="#edit-dog-profile"></div>
+                  <div class="modal-popup">
+                      <div class="modal-card">
+                        <div class="modal-head">Edit dog profile</div>
+                        <div class="form-control">
+                          <label class="form-label">dog name</label>
+                          <input id="dogname" type="text" class="form-input" data-role="none" placeholder="Name the dog">
+                        </div>
+                        <div class="form-control">
+                          <label class="form-label">breed</label>
+                          <input id="breed" type="text" class="form-input" data-role="none" placeholder="What breed is the dog?">
+                        </div>
+                        <div class="form-control">
+                          <label class="form-label">notes</label>
+                          <input id="notes" type="text" class="form-input" data-role="none" placeholder="Describe the dog">
+                        </div>
+                        <div class="form-control">
+                          <input type="submit" class="cancel-button" value="Cancel" data-role="none">
+                          <input type="submit" class="save-button" value="Save" data-role="none">
+                      </div>
+                   </div>
           </div>
 
 
