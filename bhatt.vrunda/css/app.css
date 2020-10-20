@@ -189,19 +189,24 @@ a:hover {
 }
 
 .save-button {
-  width: 50%;
+  width: 47%;
   background-color: #73C0C7;
 }
 
 
 .cancel-button {
-  width: 48%;
+  width: 44%;
   background-color: #F9FAFA;
 }
 
 .signin-alt {
    text-align:center;
    font-size:0.8em;
+}
+
+.button-bar {
+  padding-bottom: 12px;
+  padding-left: 1.5em;
 }
 
 
@@ -440,6 +445,7 @@ a:hover {
   font-weight: 500;
   text-align: center;
   margin-top: .4em;
+
 }
 
 .setting-email {
@@ -448,6 +454,25 @@ a:hover {
   font-weight: 250;
   text-align: center;
   margin-bottom: 4em;
+}
+
+
+.setting-breed {
+  color: #212121;
+  font-size: 18px;
+  font-weight: 250;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.setting-note {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 250;
+  text-align: center;
+  margin-top: .4em;
+  text-align: justify;
+  padding:24px;
 }
 
 ul { 
