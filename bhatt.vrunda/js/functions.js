@@ -13,6 +13,12 @@ const query = (options) => {
 // query({type:'users_all'}).then(d=>console.log(d))
 
 
+//currying function
+const templater = f => a =>
+    (Array.isArray(a)?a:[a])
+    reduce((r,o,i,a)=>r+f(o,i,a),'');
+
+
 
 
 

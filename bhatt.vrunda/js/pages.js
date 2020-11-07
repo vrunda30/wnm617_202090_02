@@ -7,6 +7,6 @@ const ListPage= async()=>{
 
 	console.log(d)
 
-
+    console.log(makeAnimallist(d.result))
 }
 const UserProfilePage= async() => {}
