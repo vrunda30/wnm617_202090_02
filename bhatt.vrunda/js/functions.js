@@ -1,0 +1,19 @@
+
+const query = (options) => {
+   // Fetch is a Promise
+   return fetch('data/api.php',{
+      method:'POST',
+      body:JSON.stringify(options),
+      header:{'Content-Type':'application/json'}
+   }).then(d=>d.json())
+}
+
+
+
+// query({type:'users_all'}).then(d=>console.log(d))
+
+
+
+
+
+

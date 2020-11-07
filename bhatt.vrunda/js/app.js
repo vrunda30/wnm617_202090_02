@@ -8,6 +8,18 @@ $(()=>{
    $(document)
 
 
+   .on("pagecontainerbeforeshow",function(e,ui){
+
+      console.log(ui.toPage[0].id)
+
+
+      //Routing
+
+      switch(ui.toPage[0].id){
+         case 'recent-page':
+
+
+
    /* FORM SUBMISSIONS */
 
    // event delegation
