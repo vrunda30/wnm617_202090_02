@@ -12,11 +12,20 @@ const makeWarning = (target,message) => {
 
 
 
-const checkSigninForm = () => {
+const checkSigninForm = async () => {
    let user = $("#signin-username").val();
    let pass = $("#signin-password").val();
 
-   console.log(user,pass)
+
+
+
+console.log(user,pass)
+
+    let found_user = await query({
+      type:'check_signin',params:[user,pass]});
+
+
+
    if(user=="" || pass=="") {
       makeWarning("#warning-modal","Type a Username and Password");
       return;
