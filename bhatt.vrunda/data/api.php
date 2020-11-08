@@ -85,7 +85,8 @@ function makeStatement($data){
 
 
 
-
+      case "check_signin":
+          return makeQuery($c,"SELECT * FROM track_users WHERE username = ? AND password = md5(?)",$p);
 
 
 
