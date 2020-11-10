@@ -1,19 +1,21 @@
-const RecentPage= async()=>{}
+const RecentPage= async() => {}
 
 //async and await
-const ListPage= async()=>{
+const ListPage = async() => {
 	let d = await query({
-		type:'animals_by_id',
+		type:'animals_by_user_id',
 		params:[sessionStorage.userId]
 	});
 
 
 	console.log(d)
 
-    $("#list-page .animallist").html(makeAnimallist(d.result));
+    $("#list-page .animallist")
+    .html(makeAnimallist(d.result));
 }
-const UserProfilePage= async() => {
-      
+
+
+const UserProfilePage = async() => {
       let d = await query({
       	type:'user_by_id',
       	params:[sessionStorage.userId]
@@ -22,12 +24,13 @@ const UserProfilePage= async() => {
 
 	console.log(d)
 
-    $("#user-profile-page .profile").html(makeUserProfile(d.result));
+    $("#user-profile-page .profile")
+    .html(makeUserProfile(d.result));
 }
 
 
 
-const AnimalProfilePage= async() => {
+const AnimalProfilePage = async() => {
       
       let d = await query({
       	type:'animal_by_id',
@@ -37,5 +40,6 @@ const AnimalProfilePage= async() => {
 
 	console.log(d)
 
-    $("#animal-profile-page .profile").html(makeAnimalProfile(d.result));
+    $("#animal-profile-page .profile")
+    .html(makeAnimalProfile(d.result));
 }
