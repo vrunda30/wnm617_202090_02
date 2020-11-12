@@ -34,7 +34,7 @@ function makeQuery($c,$ps,$p, $makeResults=true) {
          $stmt = $c->query($ps);
       }
 
-      $r  = $makeResults? fetchAll($stmt);
+      $r  = $makeResults ? fetchAll($stmt) : [];
 
       return [
          "result"=>$r
@@ -95,6 +95,7 @@ function makeStatement($data){
 
          default:
          return ["error"=>"No Matched Type"];
+   }
 
 }
 

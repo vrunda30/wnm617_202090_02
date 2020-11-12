@@ -1,8 +1,8 @@
 
 
-const makeAnimallist = templater(o=>` 
+const makelistpage = templater(o=>` 
  
- <li><a href="#dog-profile-page">
+ <li><a href="#dog-profile-page js-animal-jump" data-id="${o.id}">
                             <figure>
                                 <img src="${o.img}" alt="">
                             </figure>
