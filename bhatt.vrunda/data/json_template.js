@@ -1,100 +1,122 @@
-//https://json-jenerator.com
-//https://konbert.com/convert  
+// https://json-generator.com
+// https://konbert.com/convert
 
 
 
-
-
-//User Template
-
+// USER TEMPLATE
 [
   '{{repeat(10)}}',
   {
-  id: '{{index(1)}}',
-  name: '{{firstName()}} {{surname()}}',
+    id: '{{index(1)}}',
+    name: '{{firstName()}} {{surname()}}',
     username: function(){
       return 'user' + this.id;
-  },
+    },
     email: function(){
-       return this.username + '@gimail.com';
+      return this.username + '@gmail.com';
     },
     password: 'md5(pass)',
     
-    
+    age: '{{integer(20, 40)}}',
     
     img: function(tags) {
       return 'https://via.placeholder.com/400/' +
-        tags.integer(700,900) +
+        tags.integer(700,999) +
         '/fff/?text=' +
         this.username;
-   },
+    },
     date_create: '{{date(new Date(2020, 0, 1), new Date(), "YYYY-MM-dd hh:mm:ss")}}'
-    
   }
-  
-  
 ]
 
-
-
-//Animal Template
-
+//Dog Template
 [
   '{{repeat(50)}}',
   {
-  id: '{{index(1)}}',
+    id: '{{index(1)}}',
     user_id:'{{integer(1,10)}}',
-  name: '{{company()}}',
+    
+    name: '{{company()}}',
+    
+    
+    type: '{{("dog")}}',
+    breed: function(tags) {
+      var breeds = {
+        "dog":["labrador","pitbull","dachsund","yorkie"]
+      };
+      var chosen_type = breeds[this.type];
+      var chosen_index = tags.integer(0,chosen_type.length-1);
+      return chosen_type[chosen_index];
+    },
+    
+    description: '{{lorem(3, "sentences")}}',
+    
+    img: function(tags) {
+      return 'https://via.placeholder.com/400/' +
+        tags.integer(700,999) +
+        '/fff/?text=' +
+        this.name;
+    },
+    date_create: '{{date(new Date(2020, 0, 1), new Date(), "YYYY-MM-dd hh:mm:ss")}}'
+  }
+]
+
+// ANIMAL TEMPLATE
+[
+  '{{repeat(50)}}',
+  {
+    id: '{{index(1)}}',
+    user_id:'{{integer(1,10)}}',
+    
+    name: '{{company()}}',
+    
     
     type: '{{random("dog","horse","cat")}}',
     breed: function(tags) {
       var breeds = {
-        "dog":["labrador","pitbull", "dschund", "yorkie"],
-        "horse":["shetland","unicorn", "shetland"],
-        "cat":["calico","ginger","tuxedo","siamese"]
+        "dog":["labrador","pitbull","dachsund","yorkie"],
+        "horse":["shetland","andalusian","unicorn"],
+        "cat":["calico","ginger","jellicle","tuxedo","siamese"]
       };
-      
-       var chosen_type= breeds[this.type];
-       var chosen_index=tags.integer(0,chosen_type.length-1);
+      var chosen_type = breeds[this.type];
+      var chosen_index = tags.integer(0,chosen_type.length-1);
       return chosen_type[chosen_index];
     },
     
-       description: '{{lorem(3, "sentences")}}',
+    description: '{{lorem(3, "sentences")}}',
     
-       img: function(tags){
-      return 'https;//via.placeholder.com/400/' + tags.integer(700,999)+ '/fff/?text=' + this.name;
-    }, 
-       date_create:'{{date(new Date(2020, 0, 1), new Date(), "YYYY-MM-dd hh:mm:ss")}}'
+    img: function(tags) {
+      return 'https://via.placeholder.com/400/' +
+        tags.integer(700,999) +
+        '/fff/?text=' +
+        this.name;
+    },
+    date_create: '{{date(new Date(2020, 0, 1), new Date(), "YYYY-MM-dd hh:mm:ss")}}'
   }
 ]
 
 
 
-//Location Template
-
-
+// LOCATION TEMPLATE
 [
   '{{repeat(250)}}',
   {
-  id: '{{index(1)}}',
-    user_id:'{{integer(1,50)}}',
-      
-     lat: '{{floating(37.799046,37.709188)}}',
-    lng:'{{floating(-122.514223,-122.371345)}}',
+    id: '{{index(1)}}',
+    animal_id:'{{integer(1,50)}}',
     
     
-       description: '{{lorem(3, "sentences")}}',
+    lat: '{{floating(37.795613,37.703208)}}',
+    lng: '{{floating(-122.508764,-122.381666)}}',
     
-       photo: 'https;//via.placeholder.com/400/', 
-       icon: 'https;//via.placeholder.com/100/?text=ICON', 
-   
-       date_create:'{{date(new Date(2020, 0, 1), new Date(), "YYYY-MM-dd hh:mm:ss")}}'
+    
+    description: '{{lorem(3, "sentences")}}',
+    
+    photo: 'https://via.placeholder.com/400/',
+    icon: 'https://via.placeholder.com/100/?text=ICON',
+    
+    date_create: '{{date(new Date(2020, 0, 1), new Date(), "YYYY-MM-dd hh:mm:ss")}}'
   }
 ]
-
-
-
-
 
 
 

@@ -1,13 +1,12 @@
 
-
 INSERT INTO track_users VALUES
-(1,'Reba Ross','user1','user1@gimail.com','md5(pass)','https://via.placeholder.com/400/763/fff/?text=user1','2020-06-26 08:45:17'),
-(2,'Summers Peck','user2','user2@gimail.com','md5(pass)','https://via.placeholder.com/400/795/fff/?text=user2','2020-02-22 03:23:43'),
-(3,'Quinn Hess','user3','user3@gimail.com','md5(pass)','https://via.placeholder.com/400/704/fff/?text=user3','2020-05-08 03:25:58'),
-(4,'Bell Cooper','user4','user4@gimail.com','md5(pass)','https://via.placeholder.com/400/882/fff/?text=user4','2020-10-15 09:46:26'),
-(5,'Mclaughlin Guy','user5','user5@gimail.com','md5(pass)','https://via.placeholder.com/400/746/fff/?text=user5','2020-01-21 03:26:59'),
-(6,'Fran Pennington','user6','user6@gimail.com','md5(pass)','https://via.placeholder.com/400/858/fff/?text=user6','2020-05-11 08:44:30'),
-(7,'Hawkins Le','user7','user7@gimail.com','md5(pass)','https://via.placeholder.com/400/869/fff/?text=user7','2020-09-16 08:59:01'),
-(8,'Chang Justice','user8','user8@gimail.com','md5(pass)','https://via.placeholder.com/400/862/fff/?text=user8','2020-01-28 01:50:39'),
-(9,'Suarez Guthrie','user9','user9@gimail.com','md5(pass)','https://via.placeholder.com/400/803/fff/?text=user9','2020-04-19 11:30:44'),
-(10,'Abbott Sparks','user10','user10@gimail.com','md5(pass)','https://via.placeholder.com/400/893/fff/?text=user10','2020-07-20 04:36:48');
+(1,'Lorrie Gibson','user1','user1@gmail.com',md5("pass"),37,'https://via.placeholder.com/400/706/fff/?text=user1','2020-01-12 02:08:11'),
+(2,'Kimberley Carver','user2','user2@gmail.com',md5("pass"),22,'https://via.placeholder.com/400/780/fff/?text=user2','2020-01-22 10:27:23'),
+(3,'Graham Shelton','user3','user3@gmail.com',md5("pass"),24,'https://via.placeholder.com/400/797/fff/?text=user3','2020-02-13 08:23:41'),
+(4,'Kerri Blanchard','user4','user4@gmail.com',md5("pass"),25,'https://via.placeholder.com/400/913/fff/?text=user4','2020-11-26 01:05:17'),
+(5,'Aurora Sharp','user5','user5@gmail.com',md5("pass"),35,'https://via.placeholder.com/400/996/fff/?text=user5','2020-02-11 12:21:46'),
+(6,'Meredith Conrad','user6','user6@gmail.com',md5("pass"),21,'https://via.placeholder.com/400/887/fff/?text=user6','2020-07-13 04:55:49'),
+(7,'Audrey Buchanan','user7','user7@gmail.com',md5("pass"),35,'https://via.placeholder.com/400/994/fff/?text=user7','2020-09-12 07:24:08'),
+(8,'Wade Ruiz','user8','user8@gmail.com',md5("pass"),34,'https://via.placeholder.com/400/726/fff/?text=user8','2020-01-22 07:16:27'),
+(9,'Janine Hendrix','user9','user9@gmail.com',md5("pass"),33,'https://via.placeholder.com/400/776/fff/?text=user9','2020-01-28 11:30:47'),
+(10,'Vilma Bennett','user10','user10@gmail.com',md5("pass"),23,'https://via.placeholder.com/400/870/fff/?text=user10','2020-11-19 10:03:36');

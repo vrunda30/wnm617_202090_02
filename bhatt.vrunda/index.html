@@ -12,24 +12,18 @@
 
    <script src="lib/js/jquery-2.2.4.min.js"></script>
           
-          <script src="js/functions.js"></script>
-          <script src="js/maps.js"></script>
-          <script src="js/pages.js"></script>
-          <script src="js/parts.js"></script>
-          <script src="js/signin.js"></script>
-          <script src="js/app.js"></script>
-    
-    <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+   <script src="js/functions.js"></script>
+   <script src="js/forms.js"></script>
+   <script src="js/maps.js"></script>
+   <script src="js/pages.js"></script>
+   <script src="js/parts.js"></script>
+   <script src="js/signin.js"></script>
+   <script src="js/app.js"></script>
 
-   <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiWAgbyIvk_EFmyaUiQc5Kg6i39MgZy4I"defer></script>
+   <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
 
-    
-
-
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxFlGCvrBiz53-c8WDpV4bryeCiEkdNdc" defer></script>
    </head>
-
-
 <body>
 
 
@@ -45,13 +39,13 @@
                 
                <div class="card">
                     <div class="form-control">
-                      <label class="form-label">username</label>
+                      <label for="signin-username" class="form-label">username</label>
                       <input id="signin-username" type="text" class="form-input" data-role="none" placeholder="username">
                     </div>
 
                  
                     <div class="form-control">
-                        <label class="form-label">password</label>
+                        <label for="signin-password" class="form-label">password</label>
                       <input id="signin-password" type="current-password" class="form-input" data-role="none" placeholder="Password">
                     </div>
 
@@ -106,7 +100,7 @@
             
           
                <div class="form-control">
-                   <a href="http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/index.html#recent-page" class="form-button">Sign-up</a>
+                   <input type="submit" class="form-button" value="Sign Up" data-role="none">
                 </div>
             
             <div class="form-control signin-alt">
@@ -158,7 +152,10 @@
             </header>
 
           <div data-role="main">
-            
+             
+         <div class="overscroll">
+            <div class="animallist"></div>
+         </div>
 
              <div class="overscroll">
                 <ul class="display-flex flex-justify-around">
@@ -194,12 +191,12 @@
                           <input id="dogname" type="text" class="form-input" data-role="none" placeholder="Name the dog">
                         </div>
                         <div class="form-control">
-                          <label class="form-label">breed</label>
-                          <input id="breed" type="text" class="form-input" data-role="none" placeholder="What breed is the dog?">
+                          <label for="animal-add-type" class="form-label">Type</label>
+               <input id="animal-add-type" type="text" class="form-input" data-role="none" placeholder="Type animal type">
                         </div>
                         <div class="form-control">
-                          <label class="form-label">notes</label>
-                          <input id="notes" type="text" class="form-input" data-role="none" placeholder="Describe the dog">
+                          <label for="animal-add-breed" class="form-label">Breed</label>
+               <input id="animal-add-breed" type="text" class="form-input" data-role="none" placeholder="Type animal breed">
                         </div>
                         <div data-deactivate="#list-add-modal" class="button-bar">
 
