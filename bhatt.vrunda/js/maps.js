@@ -1,7 +1,5 @@
 
 
-
-
 const makeMap = async (target, center={lat: 37.786206, lng: -122.399341}) => {
    await checkData(()=>window.google);
 

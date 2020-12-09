@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-
 <html lang="en">
-   <head>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            
-         <title>Dog in the Park</title>
+<head>
 
-         <link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
-         <link rel="stylesheet" href="css/app.css">
+   
+
+   <meta charset="UTF-8">
+
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="mobile-web-app-capable" content="yes">
+
+   <link rel="apple-touch-icon" href="./site_logo.png">
+   <link rel="icon" href="./site_logo.png">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dog in the Park</title>
+
+   <link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
+   <link rel="stylesheet" href="css/app.css">
 
    <script src="lib/js/jquery-2.2.4.min.js"></script>
-          
+
    <script src="js/functions.js"></script>
    <script src="js/forms.js"></script>
    <script src="js/maps.js"></script>
@@ -22,344 +30,423 @@
 
    <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
 
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiWAgbyIvk_EFmyaUiQc5Kg6i39MgZy4I" defer></script>
-   </head>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiWAgbyIvk_EFmyaUiQc5Kg6i39MgZy4I" defer></script>
+</head>
 <body>
 
 
+
 <!-- Sign in -->
-<section data-role="page" id="signin-page">
-       
-    <div data-role="main" >
 
-        <div><img src="images/logo.png" class="logo">
-        </div>
-          
-          <form id="signin-form" data-ajax="false">
-                
-               <div class="card">
-                    <div class="form-control">
-                      <label for="signin-username" class="form-label">username</label>
-                      <input id="signin-username" type="text" class="form-input" data-role="none" placeholder="username">
-                    </div>
 
-                 
-                    <div class="form-control">
-                        <label for="signin-password" class="form-label">password</label>
-                      <input id="signin-password" type="current-password" class="form-input" data-role="none" placeholder="Password">
-                    </div>
-
-                    <div class="form-control">
-                       <input type="submit" class="form-button" value="Sign-in" data-role="none">
-                    </div>
-                
-                  <div class="form-control signin-alt">
-                       Don't have an account?
-                      <a href="#signup-page">Sign-up</a>
-                  </div>
-              </div>
-          </form>
-    </div>
-
-    <div class="modal" id="warning-modal">
-      <div class="modal-toast top" data-deactivate="warning-modal">
-        <div class="message">...</div>
+   <section data-role="page" id="signin-page">
+      <div data-role="main">
+         <div>
+            <img src="images/logo.png" class="logo">
+         </div>
+        
+         <form id="signin-form" data-ajax="false">
+         	 <div class="card">
+            <div class="form-control">
+               <label for="signin-username" class="form-label">Username</label>
+               <input id="signin-username" type="text" class="form-input" data-role="none" placeholder="Type your username">
+            </div>
+            <div class="form-control">
+               <label for="signin-password" class="form-label">Password</label>
+               <input id="signin-password" type="password" class="form-input" data-role="none" placeholder="Type your password">
+            </div>
+            <div class="form-control">
+               <input type="submit" class="form-button" value="Sign In" data-role="none">
+            </div>
+            <div class="form-control signin-alt">
+               Don't have an account?
+               <a href="#signup-page">Sign Up</a>
+            </div>
+             </div>
+         </form>
+        
       </div>
-    </div>
+   </section>
 
 
-</section>
-
-<!-- Sign up -->
+   <!-- Sign up -->
 
 
    <section data-role="page" id="signup-page">
-     
-      <div data-role="main">
-        
-          <div><img src="images/logo.png" class="logo"></div>
-          <form id="signup-form" data-ajax="false">
-          <div class="card">
-          
-        
-           
+      <div data-role="main" class="display-flex flex-align-center flex-justify-center">
+         <form id="signup-form" data-ajax="false">
+         	<div class="card">
             <div class="form-control">
-              <label class="form-label">username</label>
-               <input id="signup-username" type="text" class="form-input" data-role="none" placeholder="username">
+               <label for="signup-username" class="form-label">Username</label>
+               <input id="signup-username" type="text" class="form-input" data-role="none" placeholder="Type your username">
             </div>
-            
             <div class="form-control">
-              <label class="form-label">password</label>
-               <input id="signup-password" type="password" class="form-input" data-role="none" placeholder="Password">
+               <label for="signup-email" class="form-label">Email</label>
+               <input id="signup-email" type="email" class="form-input" data-role="none" placeholder="Type your email">
             </div>
-            
             <div class="form-control">
-              <label class="form-label">re-enter password</label>
-               <input id="signup-password-confirm" type="password" class="form-input" data-role="none" placeholder="Re-enter password">
+               <label for="signup-password" class="form-label">Password</label>
+               <input id="signup-password" type="password" class="form-input" data-role="none" placeholder="Type your password">
             </div>
-            
-          
-               <div class="form-control">
-                   <input type="submit" class="form-button" value="Sign Up" data-role="none">
-                </div>
-            
+            <div class="form-control">
+               <label for="signup-password-confirm" class="form-label">Confirm Password</label>
+               <input id="signup-password-confirm" type="password" class="form-input" data-role="none" placeholder="Retype your password">
+            </div>
+
+            <div class="form-control">
+               <input type="submit" class="form-button" value="Sign Up" data-role="none">
+            </div>
+
             <div class="form-control signin-alt">
                Already have an account?
                <a href="#signin-page">Sign In</a>
             </div>
-
+        </div>
          </form>
-         </div>
-         </div>
+      </div>
    </section>
 
 
+<!-- recent page -->
 
-<!-- Map -->
 
-
-<section data-role="page" id="recent-page" style="background-color: #F3F2F7">
-      <header data-role="header">
+   <section data-role="page" id="recent-page">
+       <header data-role="header">
         <ul>
-          <li>Find dogs</li>
+          <li>Locate dogs</li>
         </ul>    
       </header>
          <div data-role="main" class="map-container">
           <div class="map"></div>
          </div>
-      <footer data-role="footer">
-              <ul>
-                <li><a href="#recent-page"><img src="images/loc.svg" class="footer-icon"></a></li>
-                <li><a href="#list-page"> <img src="images/paw.svg" class="footer-icon"></a></li>
-                <li><a href="#user-profile-page"> <img src="images/pro.svg" class="footer-icon"></a></li> 
-              </ul>
-      </footer>
-</section>
+
+         <!-- <div class="floater top right">
+            <div class="btn-circle" data-activate="#recent-add-modal" data-deactivate="#recent-profile-modal">&equiv;</div>
+         </div>
+         <div class="floater bottom right">
+            <div class="btn-circle" data-toggle="#recent-profile-modal">&plus;</div>
+         </div>
+      -->
 
 
-<!-- Dog list -->
+         <div class="modal" id="recent-animal-modal">
+            <div class="modal-drawer bottom">
+               <div class="modal-close-floater top right">
+                  <div class="btn-circle" data-deactivate="#recent-animal-modal">&times;</div>
+               </div>
+               <div class="modal-head">head</div>
+               <div class="modal-body"></div>
+            </div>
+         </div>
+
+         <!-- <div class="modal" id="recent-profile-modal">
+            <div class="modal-drawer left">
+               <div class="modal-head">head</div>
+               <div class="modal-body">body</div>
+            </div>
+         </div> -->
+      </div>
+      <footer data-role="footer" data-template="#footer-template"></footer>
+      
+   </section>
 
 
-   <section data-role="page" id="list-page" style="background-color: #F3F2F7">
-     
-          <header data-role="header">
-              <ul>
-                 <li>List page</li>
-                 <li class="icon"><a href="#" data-activate="#list-add-modal"><img src="images/add2.svg"></a></li>
-              </ul> 
-            </header>
+<!-- Sign in -->
 
-          <div data-role="main">
-             
+
+   <section data-role="page" id="list-page">
+      <header data-role="header">
+         <ul>
+            <li class="flex-stretch list-search">
+               <form class="hotdog" id="list-search-form" data-ajax="false">
+                  <input type="search" id="list-search-input" data-role="none" placeholder="Search">
+               </form>
+            </li>
+         </ul>
+      </header>
+      <header data-role="header">
+         <div class="filter-list"></div>
+      </header>
+      <div data-role="main">
          <div class="overscroll">
             <div class="animallist"></div>
          </div>
+         <div class="floater right bottom">
+            <a href="#animal-add-page" class="btn-circle">&plus;</a>
+         </div>
+      </div>
+      <footer data-role="footer" data-template="#footer-template"></footer>
 
-             <div class="overscroll">
-                <ul class="display-flex flex-justify-around">
-                    <li>
-                        <a href="#dog-profile-page">
-                           </a>
-                    </li>
-                </ul>
+   </section>
+
+
+<!-- Sign in -->
+
+   <section data-role="page" id="user-profile-page">
+      <div data-role="main">
+         <div class="profile"></div>
+      </div>
+      <footer data-role="footer" data-template="#footer-template"></footer>
+      
+   </section>
+
+
+<!-- Sign in -->
+
+   <section data-role="page" id="settings-page">
+      <header data-role="header">
+         <h1>Settings Page</h1>
+         <ul>
+            <li><a href="#" data-rel="back">Back</a></li>
+         </ul>
+      </header>
+      <div data-role="main">
+         <ul class="settings-list">
+            <li class="settings-item"><a href="#user-edit-page">Profile Settings</a></li>
+            <li class="settings-item"><a href="#password-settings-page">Change Password</a></li>
+            <li class="settings-item"><a href="#" class="js-logout">Logout</a></li>
+         </ul>
+      </div>
+   </section>
+
+
+<!-- Sign in -->
+
+
+   <section data-role="page" id="user-edit-page">
+      <header data-role="header">
+         <h1>Profile Settings</h1>
+         <ul>
+            <li><a href="#" data-rel="back">Back</a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#" class="js-user-edit">Save</a></li>
+         </ul>
+
+      </header>
+      <div data-role="main">
+         <form id="user-edit-form" data-ajax="false" style="padding:1em"></form>
+      </div>
+   </section>
+
+
+<!-- Sign in -->
+
+
+   <section data-role="page" id="password-settings-page">
+      <header data-role="header">
+         <h1>Password Settings</h1>
+         <ul>
+            <li><a href="#" data-rel="back">Back</a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#" data-rel="back">Save</a></li>
+         </ul>
+      </header>
+      <div data-role="main" style="padding:1em">
+         <form id="password-form" data-ajax="false">
+            <div class="form-control">
+               <label for="password-oldpassword" class="form-label">Old Password</label>
+               <input id="password-oldpassword" type="text" class="form-input" data-role="none" placeholder="Type your old password">
             </div>
-        </div>
+            <div class="form-control">
+               <label for="password-newpassword" class="form-label">New Password</label>
+               <input id="password-newpassword" type="text" class="form-input" data-role="none" placeholder="Type your new password">
+            </div>
+            <div class="form-control">
+               <label for="password-confirm" class="form-label">Confirm Password</label>
+               <input id="password-confirm" type="text" class="form-input" data-role="none" placeholder="Type your new password again">
+            </div>
+         </form>
+      </div>
+   </section>
 
-          </div>
 
-          
-          <footer data-role="footer">
-                <ul>
-                  <li><a href="#recent-page"><img src="images/nloc.svg" class="footer-icon"></a></li>
-                  <li><a href="#list-page"> <img src="images/paw_active.svg" class="footer-icon"></a></li>
-                  <li><a href="#user-profile-page"> <img src="images/pro.svg" class="footer-icon"></a></li> 
-                </ul>
-          </footer>
+<!-- Sign in -->
 
 
-          
+   <section data-role="page" id="user-upload-page">
+      <header data-role="header">
+         <h1>Choose Photo</h1>
+         <ul>
+            <li><a href="#" data-rel="back">Back</a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#" class="js-user-upload">Save</a></li>
+         </ul>
 
-          <div class="modal" id="list-add-modal">
-              <div class="modal-back" data-deactivate="#list-add-modal"></div>
-                  <div class="modal-popup">
-                      <div class="modal-card">
-                        <div class="modal-head">Add dog</div>
-                        <div class="form-control">
-                          <label class="form-label">dog name</label>
-                          <input id="dogname" type="text" class="form-input" data-role="none" placeholder="Name the dog">
-                        </div>
-                        <div class="form-control">
-                          <label for="animal-add-type" class="form-label">Type</label>
+      </header>
+      <div data-role="main">
+         <form id="user-upload-form" data-ajax="false">
+            <input type="hidden" id="user-upload-image">
+            <label class="image-uploader full">
+               <input type="file" data-role="none" id="user-upload-input">
+            </label>
+         </form>
+      </div>
+   </section>
+
+
+<!-- Sign in -->
+
+
+   <section data-role="page" id="animal-profile-page">
+      <header data-role="header">
+         <h1>Animal Page</h1>
+         <ul>
+            <li><a href="#" data-rel="back">
+               <img src="img/icon/left.svg" alt="" class="icon">
+            </a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#animal-edit-page">
+               <img src="img/icon/pencil.svg" alt="" class="icon">
+            </a></li>
+         </ul>
+      </header>
+      <div data-role="main" class="display-flex flex-column">
+         <div class="animal-top">
+            <div class="map"></div>
+            <div class="floater bottom right">
+               <a href="#location-add-page" class="btn-circle">&plus;</a>
+            </div>
+         </div>
+         <div class="animal-bottom">
+            <div class="profile"></div>
+         </div>
+         
+      </div>
+   </section>
+
+<!-- Sign in -->
+
+
+   <section data-role="page" id="animal-add-page">
+      <header data-role="header">
+         <h1>Animal Info</h1>
+         <ul>
+            <li><a href="#" data-rel="back">Back</a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#" class="js-animal-add">Save</a></li>
+         </ul>
+      </header>
+      <div data-role="main" class="display-flex flex-column">
+         <form id="animal-add-form" data-ajax="false" style="padding:1em">
+            <input type="hidden" id="animal-add-destination" value="#list-page">
+            <div class="form-control">
+               <label for="animal-add-name" class="form-label">Name</label>
+               <input id="animal-add-name" type="text" class="form-input" data-role="none" placeholder="Type animal name">
+            </div>
+            <div class="form-control">
+               <label for="animal-add-type" class="form-label">Type</label>
                <input id="animal-add-type" type="text" class="form-input" data-role="none" placeholder="Type animal type">
-                        </div>
-                        <div class="form-control">
-                          <label for="animal-add-breed" class="form-label">Breed</label>
+            </div>
+            <div class="form-control">
+               <label for="animal-add-breed" class="form-label">Breed</label>
                <input id="animal-add-breed" type="text" class="form-input" data-role="none" placeholder="Type animal breed">
-                        </div>
-                        <div data-deactivate="#list-add-modal" class="button-bar">
-
-                         
-                          <input type="submit" class="cancel-button" value="Cancel" data-role="none">
-                          <input type="submit" class="save-button" value="Save" data-role="none">
-                      </div>
-                   </div>
-                 </div>
-          </div>
+            </div>
+            <div class="form-control">
+               <label for="animal-add-description" class="form-label">Description</label>
+               <textarea id="animal-add-description" class="form-input" data-role="none" placeholder="Type animal description"></textarea>
+            </div>
+         </form>
+      </div>
+   </section>
 
 
-</section>   
-            
-
-<!-- Profile -->
-
-<section data-role="page" id="user-profile-page" style="background-color: #F3F2F7">
-     
-          <header data-role="header">
-            <ul>
-              <li>Profile</li>
-              <li class="icon"><a href="#" data-activate="#edit-profile-modal"><img src="images/edit.svg"></a></li>
-              </ul> 
-          </header>
-              <ul>
-                 <li class="setting setting-blacktext"><a href="#" data-activate="#change-password-modal">Change password</a></li>
-                 <li class="setting setting-redtext"><a href="#" class="js-logout">Logout</a></li>
-               </ul>
-            </div> 
-
-          </div>
-
-          <footer data-role="footer">
-                <ul>
-                  <li><a href="#recent-page"><img src="images/nloc.svg" class="footer-icon"></a></li>
-                  <li><a href="#list-page"> <img src="images/paw.svg" class="footer-icon"></a></li>
-                  <li><a href="#user-profile-page"> <img src="images/pro_act.svg" class="footer-icon"></a></li> 
-                </ul>
-          </footer>
-
-           <div class="modal" id="edit-profile-modal">
-              <div class="modal-back" data-deactivate="#edit-profile-modal"></div>
-                  <div class="modal-popup">
-                      <div class="modal-card">
-                        <div class="modal-head">Edit profile</div>
-                        <div class="form-control">
-                          <label class="form-label">username</label>
-                          <input id="name" type="text" class="form-input" data-role="none" placeholder="username">
-                        </div>
-                         <div class="form-control">
-                          <label class="form-label">email</label>
-                          <input id="email" type="text" class="form-input" data-role="none" placeholder="email id">
-                        </div>
-                          <div data-deactivate="#edit-profile-modal" class="button-bar">
-                          <input type="submit" class="cancel-button" value="Cancel" data-role="none">
-                          <input type="submit" class="save-button" value="Save" data-role="none">
-                      </div>
-                      </div>
-                   </div>
-          </div>
-
-
-          <div class="modal" id="change-password-modal">
-              <div class="modal-back" data-deactivate="#change-password-modal"></div>
-                  <div class="modal-popup">
-                      <div class="modal-card">
-                        <div class="modal-head">Change password</div>
-                        <div class="form-control">
-                          <label class="form-label">current password</label>
-                          <input id="current-password" type="current-password" class="form-input" data-role="none" placeholder="Password">
-                        </div>
-                        <div class="form-control">
-                          <label class="form-label">new password</label>
-                          <input id="new-password" type="new-password" class="form-input" data-role="none" placeholder="New password">
-                        </div>
-                        <div class="form-control">
-                          <label class="form-label">new password</label>
-                          <input id="new-password" type="new-password" class="form-input" data-role="none" placeholder="Re-enter password">
-                        </div>
-                          <div data-deactivate="#change-password-modal" class="button-bar">
-
-                         
-                          <input type="submit" class="cancel-button" value="Cancel" data-role="none">
-                          <input type="submit" class="save-button" value="Save" data-role="none">
-                      </div>
-                   </div>
-          </div>
-        </div>
-
-</section>
-
-<!-- Dog Profile -->
-
-<section data-role="page" id="dog-profile-page" style="background-color: #F3F2F7">
-     
-          <header data-role="header">
-              <ul>
-                <li class=""><a href="#list-page"><img src="images/back.svg"></a></li>
-                 <li>Diego</li>
-                  <li class="icon"><a href="#" data-activate="#edit-dog-profile"><img src="images/edit.svg"></a></li>
-              </ul> 
-          </header>
-
-          <div data-role="main">
-          <div class="dog-top"></div>
-          <div class="dog-bottom"></div>
-
-
-            <div class="overscroll">
-              <ul>
-                <li><img src="images/dog_profile.png"></li>
-                <li class="setting-name">Diego</li>
-                <li class="setting-breed">Beagel</li>
-                <li class="setting-note">The Begel is a breed of small hound. that is similar in appearance to the much larger foxhound. The begal is a scent hound. developed primarily for hunting hare. the beagle is a scent hound, developed primarily for hunting hare.</li>
-              </ul>
-          
-            </div> 
-
-          </div>
+<!-- Sign in -->
 
 
 
-          <div class="modal" id="edit-dog-profile">
-              <div class="modal-back" data-deactivate="#edit-dog-profile"></div>
-                  <div class="modal-popup">
-                      <div class="modal-card">
-                        <div class="modal-head">Edit dog profile</div>
-                        <div class="form-control">
-                          <label class="form-label">dog name</label>
-                          <input id="dogname" type="text" class="form-input" data-role="none" placeholder="Name the dog">
-                        </div>
-                        <div class="form-control">
-                          <label class="form-label">breed</label>
-                          <input id="breed" type="text" class="form-input" data-role="none" placeholder="What breed is the dog?">
-                        </div>
-                        <div class="form-control">
-                          <label class="form-label">notes</label>
-                          <input id="notes" type="text" class="form-input" data-role="none" placeholder="Describe the dog">
-                        </div>
-                        <div data-deactivate="#edit-dog-profile" class="button-bar">
-
-                         
-                          <input type="submit" class="cancel-button" value="Cancel" data-role="none">
-                          <input type="submit" class="save-button" value="Save" data-role="none">
-                      </div>
-                   </div>
-          </div>
+   <section data-role="page" id="animal-edit-page">
+      <header data-role="header">
+         <h1>Animal Info</h1>
+         <ul>
+            <li><a href="#" data-rel="back">Back</a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#" class="js-animal-edit">Save</a></li>
+         </ul>
+      </header>
+      <div data-role="main" class="display-flex flex-column">
+         <form id="animal-edit-form" data-ajax="false" style="padding:1em"></form>
+      </div>
+   </section>
 
 
-</section>
+<!-- location add page -->
 
+
+   <section data-role="page" id="location-add-page">
+      <header data-role="header">
+         <h1>Choose Location</h1>
+         <ul>
+            <li><a href="#" data-rel="back">Back</a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#location-description-page">Next</a></li>
+         </ul>
+      </header>
+      <div data-role="main">
+         <input type="hidden" id="location-add-lat">
+         <input type="hidden" id="location-add-lng">
+         <div class="map"></div>
+      </div>
+   </section>
+
+
+<!-- location description page -->
+
+
+   <section data-role="page" id="location-description-page">
+      <header data-role="header">
+         <h1>Describe Location</h1>
+         <ul>
+            <li><a href="#" data-rel="back">Back</a></li>
+            <li class="flex-stretch"></li>
+            <li><a href="#" class="js-location-add">Save</a></li>
+         </ul>
+      </header>
+      <div data-role="main">
+         <div class="overscroll">
+            <form id="location-add-form" data-ajax="false" style="padding:1em">
+
+               <div>
+                  <input type="hidden" id="location-add-image">
+                  <label class="image-uploader thumbnail">
+                     <input type="file" data-role="none" id="location-add-upload">
+                  </label>
+               </div>
+               <div class="form-control">
+                  <label for="location-add-description" class="form-label">Description</label>
+                  <textarea id="location-add-description" class="form-input" data-role="none" placeholder="Type location description"></textarea>
+               </div>
+            </form>
+         </div>
+      </div>
+   </section>
+
+<!-- Warning Modal -->
+
+
+   <div class="modal" id="warning-modal">
+      <div class="modal-toast top" data-deactivate="#warning-modal">
+         <div class="message">Message</div>
+      </div>
+   </div>
+
+
+
+   <script type="text/template" id="footer-template">
+   <ul>
+      <li><a href="#recent-page">
+         <div class="nav-icon"><img src="images/loc.svg" class="footer-icon"></div>
+         <div class="nav-label">Recent</div>
+      </a></li>
+      <li><a href="#list-page">
+         <div class="nav-icon"><img src="images/paw.svg" class="footer-icon"></div>
+         <div class="nav-label">List</div>
+      </a></li>
+      <li><a href="#user-profile-page">
+         <div class="nav-icon"><img src="images/pro.svg" class="footer-icon"></div>
+         <div class="nav-label">Profile</div>
+      </a></li>
+   </ul>
+   </script>
 
 </body>
 </html>
-
-<style>
-
-
-
-
-
-
-
-
-
-
- 
