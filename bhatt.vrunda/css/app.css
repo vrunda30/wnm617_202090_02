@@ -47,17 +47,12 @@ h6 {
 
 
 a {
-   color:inherit;
-   text-decoration: none;
-   font-weight:bold;
+   text-decoration: none;  
 }
+
 a:hover {
    text-decoration:underline;
 }
-
-
-
-
 
 
 /* Layout Classes */
@@ -161,22 +156,15 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
 .hotdog {
-   width:100%;
+   width:90%;
    background-color:var(--color-neutral-light);
 
    padding:0.5em 1em;
-   border-radius:2em;
+   border-radius: 0.5em;
    line-height:1;
    display:inline-flex;
+   margin: auto;
 }
 .hotdog input {
    background-color:transparent;
@@ -186,23 +174,21 @@ a:hover {
    border-radius:0;
    padding:0;
    margin:0;
-   width:100%;
+   width:80%;
    flex:1;
    outline:0;
 }
+
 .ui-header .hotdog {
    height:calc(var(--header-height) - 0.4em);
    vertical-align: middle;
 }
-
-
 
 .list-search {
    padding:0.2em 0.5em;
    display: flex;
    align-items: center;
 }
-
 
 #signin-page [data-role='main'],
 #signup-page [data-role='main']{
@@ -242,30 +228,56 @@ a:hover {
    overflow:hidden;
    position:relative;
 }
-.ui-header,
-.ui-footer {
-   flex:none;
-   height:var(--header-height);
-   line-height:var(--header-height);
-   border-width:0;
-   background-color:var(--color-white);
-   box-shadow:0 0 5px rgba(0,0,0,0.15);
 
+/* Header */
+
+.ui-header {
+   flex:none;
+   line-height:var(--header-height);
    overflow:hidden;
    position:relative;
+   align-items: center;
 }
+
+
 .ui-header .ui-title {
-   margin:0;
+  color: #212121;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 0px;
+  align-items: center;
+  margin-left: 20px;
+  line-height: 08px;
+}
+
+.ui-header ul {
+   position:relative;
+   display:flex;
    padding:0;
-   position:absolute;
-   top:0;
-   left:0;
-   width:100%;
-   text-align:center;
 }
 
 
-.ui-header ul,
+.ui-header a {
+   display:block;
+   padding:0 em;
+}
+
+.ui-header {
+    border-width: 0px 0; 
+}
+
+
+/* Footer */
+
+.ui-footer {
+    border-width: 0px 0;   
+}
+
+.ui-footer a {
+   display:block;
+   padding:0 em;
+}
+
 .ui-footer ul {
    position:relative;
    display:flex;
@@ -273,23 +285,28 @@ a:hover {
    margin:0;
    padding:0;
 }
+
 .ui-footer li {
    flex: 1 1 auto;
    text-align:center;
 }
-.ui-header a,
-.ui-footer a {
-   display:block;
-   padding:0 1em;
+
+.ui-footer{
+  flex:none;
+  padding-top: 0.6em;
+  height: 64px;
+  width: 90%;
+  border-radius: 36px;
+  background-color: #73C0C7;
+  box-shadow: 0 24px 18px -8px rgba(95,139,145,0.47);
+  margin: auto;
+  margin-bottom: 16px;
+  border-width: 0px 0; 
 }
 
 
-
-
-
-
-
 /* MODALS */
+
 .modal {
     position: absolute;
     width: 100%;
@@ -312,6 +329,7 @@ a:hover {
 
 
 /* MODAL POPUP*/
+
 .modal-popup {
    position:absolute;
    top:50%;
@@ -325,8 +343,9 @@ a:hover {
     padding: 1em;
 }
 .modal-head, .modal-foot {
-    background-color: var(--color-neutral-lighter);
+    background-color: #73C0C7;
     padding: 0.5em 1em;
+    color: #00737A;
 }
 
 
@@ -362,19 +381,16 @@ a:hover {
    width:100%;
 }
 .modal-drawer.top { top:0; transform:translateY(-100%); }
-.modal-drawer.bottom { bottom:0; transform:translateY(100%); }
+.modal-drawer.bottom { top:28em; transform:translateY(50%); }
 
 .modal.active .modal-drawer {
    transform:translate(0);
    pointer-events:initial;
 }
 
-
 .modal-drawer .modal-body {
    flex: 1 1 100%;
 }
-
-
 
 .modal-foot input {
    display:block;
@@ -457,17 +473,12 @@ a:hover {
 
 
 
-
-
-
-
-
 /* PROFILE */
 .profile-image {
    position:relative;
 }
 .profile-image>img {
-    border-radius: 50%;
+    border-radius: 0%;
     width: calc(100vw - 4em);
     height: calc(100vw - 4em);
     object-fit: cover;
@@ -527,8 +538,10 @@ a:hover {
     vertical-align:text-bottom;
 }
 .animallist-item {
+  width: 92%;
     display: flex;
-    margin: 1em 0;
+    margin-left: 4%;
+    margin-top: 1em;
     border-radius: 1em;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
     overflow: hidden;
@@ -568,8 +581,8 @@ a:hover {
 
 
 .nav-icon img {
-   width:1em;
-   height:1em;
+   width:1.2em;
+   height:1.2em;
    vertical-align: text-bottom;
 }
 .nav-icon {
@@ -577,8 +590,9 @@ a:hover {
    font-size:1.5em;
 }
 .nav-label {
-   line-height:calc(var(--header-height) * 0.4);
+   line-height:calc(var(--header-height) * 0.3);
    font-size:0.7em;
+   color: #FFF;
 }
 
 
@@ -591,13 +605,11 @@ a:hover {
   height:100%;
 }
 
-
-
 .map-container{
   width: 320px;
   margin: auto;
   margin-bottom: 18px;
-  border-radius: 3em;
+  border-radius: 2em;
 }
 
 
@@ -622,15 +634,20 @@ a:hover {
   position:relative;
 }
 
+.icon{
+  margin-left: 80%;
+  position: absolute;
+  list-style-type:none;
+}
 
+.back-icon{
+  margin-left: 20px;
+  list-style-type:none;
+}
 
-
-
-
-.icon {
-   width:1.5em;
-   height:1.5em;
-   vertical-align: middle;
+.save-icon{
+  line-height: 36px;
+  list-style-type:none;
 }
 
 
@@ -698,3 +715,41 @@ a:hover {
   border-radius: 10px; 
   background-color: #FFFFFF;
 }
+
+.modal-card {
+  box-sizing: border-box;
+  height: auto;
+  width: 348px;
+  border: 1px solid rgba(32,53,128,0.16);
+  border-radius: 10px; 
+  background-color: #FFFFFF;
+}
+
+
+.setting { 
+  color: #212121;
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  list-style-type:none;
+  background-color: #E6EDEE;
+  height: 44px;
+  margin-top: 1em;
+  padding-left: 40px;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+
+
+.list-container{
+  width: 320px;
+  margin: auto;
+  margin-bottom: 18px;
+  border-radius: 0em;
+}
+

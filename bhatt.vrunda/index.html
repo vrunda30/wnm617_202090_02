@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
 
-   
-
    <meta charset="UTF-8">
 
    <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,8 +13,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Dog in the Park</title>
 
-   <link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
-   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
+  <link rel="stylesheet" href="css/app.css">
 
    <script src="lib/js/jquery-2.2.4.min.js"></script>
 
@@ -30,7 +28,7 @@
 
    <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiWAgbyIvk_EFmyaUiQc5Kg6i39MgZy4I" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiWAgbyIvk_EFmyaUiQc5Kg6i39MgZy4I" defer></script>   
 </head>
 <body>
 
@@ -68,8 +66,7 @@
       </div>
    </section>
 
-
-   <!-- Sign up -->
+<!-- Sign up -->
 
 
    <section data-role="page" id="signup-page">
@@ -106,120 +103,91 @@
       </div>
    </section>
 
+<!-- Map/recent page -->
 
-<!-- recent page -->
-
-
-   <section data-role="page" id="recent-page">
+   <section data-role="page" id="recent-page" style="background-color: #F3F2F7">
        <header data-role="header">
         <ul>
-          <li>Locate dogs</li>
+          <li class="ui-title">Recent locations</li>
         </ul>    
       </header>
          <div data-role="main" class="map-container">
           <div class="map"></div>
-         </div>
-
-         <!-- <div class="floater top right">
-            <div class="btn-circle" data-activate="#recent-add-modal" data-deactivate="#recent-profile-modal">&equiv;</div>
-         </div>
-         <div class="floater bottom right">
-            <div class="btn-circle" data-toggle="#recent-profile-modal">&plus;</div>
-         </div>
-      -->
-
-
+         
          <div class="modal" id="recent-animal-modal">
             <div class="modal-drawer bottom">
                <div class="modal-close-floater top right">
                   <div class="btn-circle" data-deactivate="#recent-animal-modal">&times;</div>
-               </div>
-               <div class="modal-head">head</div>
+               </div class="modal-card">
+               <div class="modal-head">Dog in the park</div>
                <div class="modal-body"></div>
             </div>
          </div>
-
-         <!-- <div class="modal" id="recent-profile-modal">
-            <div class="modal-drawer left">
-               <div class="modal-head">head</div>
-               <div class="modal-body">body</div>
-            </div>
-         </div> -->
       </div>
-      <footer data-role="footer" data-template="#footer-template"></footer>
-      
+      <footer data-role="footer" data-template="#footer-template"></footer>  
    </section>
 
+<!-- Animal list page -->
 
-<!-- Sign in -->
-
-
-   <section data-role="page" id="list-page">
-      <header data-role="header">
+    <section data-role="page" id="list-page">
+      	<header data-role="header">
          <ul>
-            <li class="flex-stretch list-search">
-               <form class="hotdog" id="list-search-form" data-ajax="false">
-                  <input type="search" id="list-search-input" data-role="none" placeholder="Search">
-               </form>
-            </li>
+         	 <li class="ui-title">List page</li>
+             <li class="icon"><a href="#animal-add-page"><img src="images/add2.svg"></a></li>
          </ul>
-      </header>
-      <header data-role="header">
-         <div class="filter-list"></div>
-      </header>
-      <div data-role="main">
+      	</header>
+
+		<div class="flex-stretch list-search">
+ 			<form class="hotdog" id="list-search-form" data-ajax="false">
+                  <input type="search" id="list-search-input" data-role="none" placeholder="Search">
+            </form>
+        </div>
+
+     	<div data-role="main">
          <div class="overscroll">
             <div class="animallist"></div>
-         </div>
-         <div class="floater right bottom">
-            <a href="#animal-add-page" class="btn-circle">&plus;</a>
-         </div>
-      </div>
-      <footer data-role="footer" data-template="#footer-template"></footer>
+        </div>
+        
+        </div>
+     	<footer data-role="footer" data-template="#footer-template"></footer>
+	</section>
 
-   </section>
+<!-- User profile page -->
 
-
-<!-- Sign in -->
-
-   <section data-role="page" id="user-profile-page">
+   <section data-role="page" id="user-profile-page" style="background-color: #F3F2F7">
       <div data-role="main">
          <div class="profile"></div>
       </div>
       <footer data-role="footer" data-template="#footer-template"></footer>
-      
    </section>
 
+<!-- Settings page -->
 
-<!-- Sign in -->
-
-   <section data-role="page" id="settings-page">
+   <section data-role="page" id="settings-page" style="background-color: #F3F2F7">
       <header data-role="header">
-         <h1>Settings Page</h1>
          <ul>
-            <li><a href="#" data-rel="back">Back</a></li>
+            <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
+            <li class="ui-title save-icon">Settings</li>
          </ul>
       </header>
       <div data-role="main">
-         <ul class="settings-list">
-            <li class="settings-item"><a href="#user-edit-page">Profile Settings</a></li>
-            <li class="settings-item"><a href="#password-settings-page">Change Password</a></li>
-            <li class="settings-item"><a href="#" class="js-logout">Logout</a></li>
+         <ul>
+            <li class="setting"><a href="#user-edit-page">Profile settings</a></li>
+            <li class="setting"><a href="#password-settings-page">Change password</a></li>
+            <li class="setting"><a href="#" class="js-logout">Logout</a></li>
          </ul>
       </div>
    </section>
 
+<!-- User profile edit  -->
 
-<!-- Sign in -->
 
-
-   <section data-role="page" id="user-edit-page">
+   <section data-role="page" id="user-edit-page" style="background-color: #F3F2F7">
       <header data-role="header">
-         <h1>Profile Settings</h1>
          <ul>
-            <li><a href="#" data-rel="back">Back</a></li>
-            <li class="flex-stretch"></li>
-            <li><a href="#" class="js-user-edit">Save</a></li>
+            <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
+            <li class="ui-title">Profile Settings</li>
+            <li class="save-icon"><a href="#" class="js-user-edit">Save</a></li>
          </ul>
 
       </header>
@@ -228,17 +196,15 @@
       </div>
    </section>
 
+<!-- Change passowrd -->
 
-<!-- Sign in -->
-
-
-   <section data-role="page" id="password-settings-page">
+   <section data-role="page" id="password-settings-page" style="background-color: #F3F2F7">
       <header data-role="header">
-         <h1>Password Settings</h1>
+         
          <ul>
-            <li><a href="#" data-rel="back">Back</a></li>
-            <li class="flex-stretch"></li>
-            <li><a href="#" data-rel="back">Save</a></li>
+            <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
+            <li class="ui-title">Password Settings</li>
+            <li class="save-icon"><a href="#" data-rel="back">Save</a></li>
          </ul>
       </header>
       <div data-role="main" style="padding:1em">
@@ -259,17 +225,15 @@
       </div>
    </section>
 
+<!-- user upload page -->
 
-<!-- Sign in -->
-
-
-   <section data-role="page" id="user-upload-page">
+   <section data-role="page" id="user-upload-page" style="background-color: #F3F2F7">
       <header data-role="header">
-         <h1>Choose Photo</h1>
+         
          <ul>
-            <li><a href="#" data-rel="back">Back</a></li>
-            <li class="flex-stretch"></li>
-            <li><a href="#" class="js-user-upload">Save</a></li>
+            <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
+            <li class="ui-title">Choose Photo</li>
+            <li class="save-icon"><a href="#" class="js-user-upload">Save</a></li>
          </ul>
 
       </header>
@@ -283,21 +247,16 @@
       </div>
    </section>
 
+<!-- animal profile page -->
 
-<!-- Sign in -->
 
-
-   <section data-role="page" id="animal-profile-page">
+   <section data-role="page" id="animal-profile-page" style="background-color: #F3F2F7">
       <header data-role="header">
-         <h1>Animal Page</h1>
+         
          <ul>
-            <li><a href="#" data-rel="back">
-               <img src="img/icon/left.svg" alt="" class="icon">
-            </a></li>
-            <li class="flex-stretch"></li>
-            <li><a href="#animal-edit-page">
-               <img src="img/icon/pencil.svg" alt="" class="icon">
-            </a></li>
+            <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
+            <li class="ui-title">Dog profile</li>
+            <li class="save-icon"><a href="#animal-edit-page"><img src="imgages/edit.svg"></a></li>
          </ul>
       </header>
       <div data-role="main" class="display-flex flex-column">
@@ -314,16 +273,15 @@
       </div>
    </section>
 
-<!-- Sign in -->
+<!-- Animal add page -->
 
-
-   <section data-role="page" id="animal-add-page">
+   <section data-role="page" id="animal-add-page" style="background-color: #F3F2F7">
       <header data-role="header">
-         <h1>Animal Info</h1>
+         
          <ul>
-            <li><a href="#" data-rel="back">Back</a></li>
-            <li class="flex-stretch"></li>
-            <li><a href="#" class="js-animal-add">Save</a></li>
+            <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
+            <li class="ui-title">Animal Info</li>
+            <li class="save-icon"><a href="#" class="js-animal-add">Save</a></li>
          </ul>
       </header>
       <div data-role="main" class="display-flex flex-column">
@@ -349,18 +307,15 @@
       </div>
    </section>
 
+<!-- animal edit page -->
 
-<!-- Sign in -->
-
-
-
-   <section data-role="page" id="animal-edit-page">
+   <section data-role="page" id="animal-edit-page" style="background-color: #F3F2F7">
       <header data-role="header">
-         <h1>Animal Info</h1>
+         
          <ul>
-            <li><a href="#" data-rel="back">Back</a></li>
-            <li class="flex-stretch"></li>
-            <li><a href="#" class="js-animal-edit">Save</a></li>
+            <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
+            <li class="ui-title">Animal Page</li>
+            <li class="save-icon"><a href="#" class="js-animal-edit">Save</a></li>
          </ul>
       </header>
       <div data-role="main" class="display-flex flex-column">
@@ -368,17 +323,15 @@
       </div>
    </section>
 
-
 <!-- location add page -->
 
 
    <section data-role="page" id="location-add-page">
       <header data-role="header">
-         <h1>Choose Location</h1>
          <ul>
-            <li><a href="#" data-rel="back">Back</a></li>
-            <li class="flex-stretch"></li>
-            <li><a href="#location-description-page">Next</a></li>
+            <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
+            <li class="ui-title">Choose Location</li>
+            <li class="save-icon"><a href="#location-description-page">Next</a></li>
          </ul>
       </header>
       <div data-role="main">
@@ -388,17 +341,16 @@
       </div>
    </section>
 
-
 <!-- location description page -->
 
 
    <section data-role="page" id="location-description-page">
       <header data-role="header">
-         <h1>Describe Location</h1>
+         
          <ul>
-            <li><a href="#" data-rel="back">Back</a></li>
-            <li class="flex-stretch"></li>
-            <li><a href="#" class="js-location-add">Save</a></li>
+            <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
+            <li class="ui-title">Describe Location</li>
+            <li class="save-icon"><a href="#" class="js-location-add">Save</a></li>
          </ul>
       </header>
       <div data-role="main">
@@ -421,7 +373,6 @@
    </section>
 
 <!-- Warning Modal -->
-
 
    <div class="modal" id="warning-modal">
       <div class="modal-toast top" data-deactivate="#warning-modal">

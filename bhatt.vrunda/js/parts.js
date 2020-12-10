@@ -15,6 +15,12 @@ const makeAnimalList = templater(o=>`
 
 
 const makeUserProfile = templater(o=>`
+      <header data-role="header">
+         <ul>
+            <li class="ui-title">User profile</li>
+            <li class="icon"><a href="#settings-page"><img src="images/settings.svg"></a></li>
+         </ul>
+      </header>
 <div class="profile-image">
    <img src="${o.img}" alt="">
 </div>
@@ -22,10 +28,10 @@ const makeUserProfile = templater(o=>`
    <div class="profile-name">${o.name}</div>
    <div class="profile-email"><strong>Email</strong>: ${o.email}</div>
 </div>
-<p><a href="#settings-page">Settings</a></p>
 `);
 
 const makeAnimalProfile = templater(o=>`
+
 <div class="profile-image">
    <img src="${o.img}" alt="">
 </div>
@@ -35,7 +41,7 @@ const makeAnimalProfile = templater(o=>`
    <div class="profile-breed"><strong>Breed</strong>: ${o.breed}</div>
 </div>
 <div>
-   <a href="#" class="js-animal-delete" data-id="${o.id}">Delete</a>
+   <a href="#" class="js-animal-delete setting" data-id="${o.id}">Delete</a>
 </div>
 `);
 
@@ -51,7 +57,7 @@ const makeAnimalPopup = o=>`
 </div>
 </div>
 <div>
-<a href="#" class="form-button js-animal-jump" data-id="${o.animal_id}">Visit</a> 
+<a href="#" class="save-button js-animal-jump" data-id="${o.animal_id}">View Profile</a> 
 </div>
 `;
 
