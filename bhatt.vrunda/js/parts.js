@@ -15,12 +15,7 @@ const makeAnimalList = templater(o=>`
 
 
 const makeUserProfile = templater(o=>`
-      <header data-role="header">
-         <ul>
-            <li class="ui-title">User profile</li>
-            <li class="icon"><a href="#settings-page"><img src="images/settings.svg"></a></li>
-         </ul>
-      </header>
+      
 <div class="profile-image">
    <img src="${o.img}" alt="">
 </div>

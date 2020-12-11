@@ -117,7 +117,7 @@
          <div class="modal" id="recent-animal-modal">
             <div class="modal-drawer bottom">
                <div class="modal-close-floater top right">
-                  <div class="btn-circle" data-deactivate="#recent-animal-modal">&times;</div>
+                  <div class="btn-circle2" data-deactivate="#recent-animal-modal">&times;</div>
                </div class="modal-card">
                <div class="modal-head">Dog in the park</div>
                <div class="modal-body"></div>
@@ -154,7 +154,15 @@
 
 <!-- User profile page -->
 
+   
+
    <section data-role="page" id="user-profile-page" style="background-color: #F3F2F7">
+   	<header data-role="header">
+         <ul>
+            <li class="ui-title">User profile</li>
+            <li class="icon"><a href="#settings-page"><img src="images/settings.svg"></a></li>
+         </ul>
+      </header>
       <div data-role="main">
          <div class="profile"></div>
       </div>
@@ -172,7 +180,7 @@
       </header>
       <div data-role="main">
          <ul>
-            <li class="setting"><a href="#user-edit-page">Profile settings</a></li>
+            <li class="setting"><a href="#user-edit-page">Edit profile</a></li>
             <li class="setting"><a href="#password-settings-page">Change password</a></li>
             <li class="setting"><a href="#" class="js-logout">Logout</a></li>
          </ul>
@@ -186,7 +194,7 @@
       <header data-role="header">
          <ul>
             <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
-            <li class="ui-title">Profile Settings</li>
+            <li class="ui-title">Edit profile</li>
             <li class="save-icon"><a href="#" class="js-user-edit">Save</a></li>
          </ul>
 
@@ -256,14 +264,14 @@
          <ul>
             <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
             <li class="ui-title">Dog profile</li>
-            <li class="save-icon"><a href="#animal-edit-page"><img src="imgages/edit.svg"></a></li>
+            <li class="save-icon"><a href="#recent-page">Done</a></li>
          </ul>
       </header>
       <div data-role="main" class="display-flex flex-column">
          <div class="animal-top">
             <div class="map"></div>
             <div class="floater bottom right">
-               <a href="#location-add-page" class="btn-circle">&plus;</a>
+               <a href="#location-add-page" class="btn-circle">&plus; Add new location</a>
             </div>
          </div>
          <div class="animal-bottom">
