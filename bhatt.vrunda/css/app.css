@@ -47,11 +47,14 @@ h6 {
 
 
 a {
-   text-decoration: none;  
+    color: #212121;
+  font-family: "SF Pro Display";
+  text-decoration: none; 
 }
 
 a:hover {
-   text-decoration:underline;
+   color: #73C0C7;
+  font-family: "SF Pro Display";
 }
 
 
@@ -158,13 +161,14 @@ a:hover {
 
 .hotdog {
    width:90%;
-   background-color:var(--color-neutral-light);
+   background-color:#FFFFFF;
 
    padding:0.5em 1em;
    border-radius: 0.5em;
    line-height:1;
    display:inline-flex;
    margin: auto;
+   margin-top: 14px;
 }
 .hotdog input {
    background-color:transparent;
@@ -236,13 +240,15 @@ a:hover {
    overflow:hidden;
    position:relative;
    align-items: center;
+   background-color: #00737A;
 }
 
 
 .ui-header .ui-title {
-  color: #212121;
-  font-size: 18px;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-family: "SF Pro Display";
+  letter-spacing: 0;
   align-items: center;
   margin-left: 30px;
   line-height: 08px;
@@ -375,7 +381,7 @@ a:hover {
 
 .modal-drawer.top,
 .modal-drawer.bottom {
-   height:30vh;
+   height:40vh;
    width:100%;
 }
 .modal-drawer.top { top:0; transform:translateY(-100%); }
@@ -399,7 +405,6 @@ a:hover {
    background-color:transparent;
    outline:0;
 }
-
 
 
 
@@ -427,7 +432,7 @@ a:hover {
    transform: translate(-50%,0);
    pointer-events: initial;
 }
-
+ 
 
 
 
@@ -483,20 +488,30 @@ a:hover {
 /* PROFILE */
 .profile-image {
    position:relative;
+  
 }
+
+
 .profile-image>img {
     border-radius: 0%;
-    width: calc(100vw - 4em);
-    height: calc(100vw - 4em);
     object-fit: cover;
-    margin: 2em;
+    margin: em;
 }
+
 .profile-body {
    padding:1em;
 }
 .profile-name {
-   font-size:1em;
-   margin-bottom: 1em;
+  height: 24px;
+  color: #212121;
+  font-family: "SF Pro Display";
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 6px;
+
 }
 #animal-profile-page .profile-image {
    display:flex;
@@ -504,7 +519,7 @@ a:hover {
    justify-content:center;
 }
 #animal-profile-page .profile-image img {
-    width: calc(100vw - 8em);
+     width: 100%;
     height: calc(100vw - 8em);
 }
 
@@ -618,6 +633,7 @@ a:hover {
   width: 320px;
   margin: auto;
   margin-bottom: 18px;
+  margin-top: 14px;
   border-radius: 2em;
 }
 
@@ -652,6 +668,7 @@ a:hover {
 .back-icon{
   margin-left: 20px;
   list-style-type:none;
+
 }
 
 .save-icon{
@@ -761,4 +778,15 @@ ul {
   border-radius: 0em;
 }
 
-
+.profile-email{
+  height: 24px;
+  width: 331px;
+  color: #212121;
+  font-family: "SF Pro Display";
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 12px;
+}

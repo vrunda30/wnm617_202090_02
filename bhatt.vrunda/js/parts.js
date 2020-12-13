@@ -21,7 +21,7 @@ const makeUserProfile = templater(o=>`
 </div>
 <div class="profile-body">
    <div class="profile-name">${o.name}</div>
-   <div class="profile-email"><strong>Email</strong>: ${o.email}</div>
+   <div class="profile-email">${o.email}</div>
 </div>
 `);
 

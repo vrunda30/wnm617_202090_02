@@ -34,6 +34,11 @@
 
 
 
+
+	
+
+
+
 <!-- Sign in -->
 
 
@@ -65,6 +70,11 @@
         
       </div>
    </section>
+
+
+
+
+	
 
 <!-- Sign up -->
 
@@ -103,6 +113,11 @@
       </div>
    </section>
 
+
+
+
+	
+
 <!-- Map/recent page -->
 
    <section data-role="page" id="recent-page" style="background-color: #F3F2F7">
@@ -119,7 +134,7 @@
                <div class="modal-close-floater top right">
                   <div class="btn-circle2" data-deactivate="#recent-animal-modal">&times;</div>
                </div class="modal-card">
-               <div class="modal-head">Dog in the park</div>
+               <div class="modal-head">Track Dogs</div>
                <div class="modal-body"></div>
             </div>
          </div>
@@ -127,16 +142,20 @@
       <footer data-role="footer" data-template="#footer-template"></footer>  
    </section>
 
+
+
+
+	
+
 <!-- Animal list page -->
 
-    <section data-role="page" id="list-page">
+    <section data-role="page" id="list-page" style="background-color: #F3F2F7">
       	<header data-role="header">
          <ul>
          	 <li class="ui-title">List page</li>
              <li class="icon"><a href="#animal-add-page"><img src="images/add2.svg"></a></li>
          </ul>
       	</header>
-
 		<div class="flex-stretch list-search">
  			<form class="hotdog" id="list-search-form" data-ajax="false">
                   <input type="search" id="list-search-input" data-role="none" placeholder="Search">
@@ -152,9 +171,13 @@
      	<footer data-role="footer" data-template="#footer-template"></footer>
 	</section>
 
-<!-- User profile page -->
 
-   
+
+
+
+
+
+<!-- User profile page -->
 
    <section data-role="page" id="user-profile-page" style="background-color: #F3F2F7">
    	<header data-role="header">
@@ -168,6 +191,11 @@
       </div>
       <footer data-role="footer" data-template="#footer-template"></footer>
    </section>
+
+
+
+
+	
 
 <!-- Settings page -->
 
@@ -187,6 +215,11 @@
       </div>
    </section>
 
+
+
+
+	
+
 <!-- User profile edit  -->
 
 
@@ -204,6 +237,11 @@
       </div>
    </section>
 
+
+
+
+	
+
 <!-- Change passowrd -->
 
    <section data-role="page" id="password-settings-page" style="background-color: #F3F2F7">
@@ -211,7 +249,7 @@
          
          <ul>
             <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
-            <li class="ui-title">Password Settings</li>
+            <li class="ui-title">Change Password</li>
             <li class="save-icon"><a href="#" data-rel="back">Save</a></li>
          </ul>
       </header>
@@ -232,6 +270,11 @@
          </form>
       </div>
    </section>
+
+
+
+
+	
 
 <!-- user upload page -->
 
@@ -255,6 +298,11 @@
       </div>
    </section>
 
+
+
+
+	
+
 <!-- animal profile page -->
 
 
@@ -264,7 +312,7 @@
          <ul>
             <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
             <li class="ui-title">Dog profile</li>
-            <li class="save-icon"><a href="#recent-page">Done</a></li>
+            <li class="save-icon"><a href="#animal-edit-page">Edit</a></li>
          </ul>
       </header>
       <div data-role="main" class="display-flex flex-column">
@@ -281,6 +329,11 @@
       </div>
    </section>
 
+
+
+
+	
+
 <!-- Animal add page -->
 
    <section data-role="page" id="animal-add-page" style="background-color: #F3F2F7">
@@ -293,7 +346,7 @@
          </ul>
       </header>
       <div data-role="main" class="display-flex flex-column">
-         <form id="animal-add-form" data-ajax="false" style="padding:1em">
+         <form id="animal-add-form" data-ajax="false">
             <input type="hidden" id="animal-add-destination" value="#list-page">
             <div class="form-control">
                <label for="animal-add-name" class="form-label">Name</label>
@@ -315,6 +368,11 @@
       </div>
    </section>
 
+
+
+
+	
+
 <!-- animal edit page -->
 
    <section data-role="page" id="animal-edit-page" style="background-color: #F3F2F7">
@@ -331,10 +389,15 @@
       </div>
    </section>
 
+
+
+
+	
+
 <!-- location add page -->
 
 
-   <section data-role="page" id="location-add-page">
+   <section data-role="page" id="location-add-page" style="background-color: #F3F2F7">
       <header data-role="header">
          <ul>
             <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
@@ -349,10 +412,15 @@
       </div>
    </section>
 
+
+
+
+	
+
 <!-- location description page -->
 
 
-   <section data-role="page" id="location-description-page">
+   <section data-role="page" id="location-description-page" style="background-color: #F3F2F7">
       <header data-role="header">
          
          <ul>
@@ -380,6 +448,11 @@
       </div>
    </section>
 
+
+
+
+	
+
 <!-- Warning Modal -->
 
    <div class="modal" id="warning-modal">
@@ -387,9 +460,6 @@
          <div class="message">Message</div>
       </div>
    </div>
-
-
-
    <script type="text/template" id="footer-template">
    <ul>
       <li><a href="#recent-page">
@@ -406,6 +476,8 @@
       </a></li>
    </ul>
    </script>
+
+
 
 </body>
 </html>
