@@ -183,7 +183,7 @@ function makeStatement($data) {
             `track_users`
             (`name`,`username`,`email`,`password`,`img`,`date_create`)
             VALUES
-            ('',?, ?, md5(?), 'https://via.placeholder.com/400/?text=USER', NOW())
+            ('',?, ?, md5(?), 'http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/images/pluser.png', NOW())
             ",$p,false);
          return ["id"=>$c->lastInsertId()];
 
@@ -192,7 +192,7 @@ function makeStatement($data) {
             `track_animals`
             (`user_id`,`name`,`type`,`breed`,`description`,`img`,`date_create`)
             VALUES
-            (?, ?, ?, ?, ?, 'https://via.placeholder.com/400/?text=ANIMAL', NOW())
+            (?, ?, ?, ?, ?, 'http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/images/planimal.png', NOW())
             ",$p,false);
          return ["id"=>$c->lastInsertId()];
 
@@ -201,7 +201,7 @@ function makeStatement($data) {
             `track_locations`
             (`animal_id`,`lat`,`lng`,`description`,`photo`,`icon`,`date_create`)
             VALUES
-            (?, ?, ?, ?, 'https://via.placeholder.com/400/?text=LOCATION', 'https://via.placeholder.com/100/?text=ICON', NOW())
+            (?, ?, ?, ?, 'https://via.placeholder.com/400/?text=LOCATION', 'http://vrundabhatt.com/aau/wnm617/bhatt.vrunda/images/planimal.png', NOW())
             ",$p,false);
          return ["id"=>$c->lastInsertId()];
 
@@ -255,10 +255,6 @@ function makeStatement($data) {
       default: return ["error"=>"No Matched type"];
    }
 }
-
-
-
-
 
 
 

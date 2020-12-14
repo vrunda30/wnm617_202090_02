@@ -112,6 +112,9 @@
    </section>
 
 
+
+
+
 <!-- Sign up confirmation -->
 
 
@@ -121,11 +124,14 @@
             <img src="images/logo.png" class="logo">
          </div>
          
-            <div class="card">
+            <div class="card20">
+
                <div class="cong">
 
                  <STRONG>Congratulations!</STRONG> <br> 
-                 You have created a new account
+                 You have created a new account<br> <br>
+
+                 Please <a href="#signin-page">Sign In</a> to continue
 
 
                </div>
@@ -155,12 +161,27 @@
                <div class="modal-close-floater top right">
                   <div class="btn-circle2" data-deactivate="#recent-animal-modal">&times;</div>
                </div class="modal-card">
-               <div class="modal-head">Track Dogs</div>
+               <div class="modal-head">Recently located</div>
                <div class="modal-body"></div>
             </div>
          </div>
       </div>
-      <footer data-role="footer" data-template="#footer-template"></footer>  
+      <footer data-role="footer">
+          <ul>
+      <li><a href="#recent-page">
+         <div class="nav-icon"><img src="images/loc.svg" class="footer-icon"></div>
+         <div class="nav-label-act">Recent</div>
+      </a></li>
+      <li><a href="#list-page">
+         <div class="nav-icon"><img src="images/paw.svg" class="footer-icon"></div>
+         <div class="nav-label">List</div>
+      </a></li>
+      <li><a href="#user-profile-page">
+         <div class="nav-icon"><img src="images/pro.svg" class="footer-icon"></div>
+         <div class="nav-label">Profile</div>
+      </a></li>
+   </ul>
+      </footer>  
    </section>
 
 
@@ -189,7 +210,22 @@
         </div>
         
         </div>
-     	<footer data-role="footer" data-template="#footer-template"></footer>
+     	<footer data-role="footer">
+          <ul>
+      <li><a href="#recent-page">
+         <div class="nav-icon"><img src="images/loc.png" class="footer-icon"></div>
+         <div class="nav-label">Recent</div>
+      </a></li>
+      <li><a href="#list-page">
+         <div class="nav-icon"><img src="images/paw_active.svg" class="footer-icon"></div>
+         <div class="nav-label-act">List</div>
+      </a></li>
+      <li><a href="#user-profile-page">
+         <div class="nav-icon"><img src="images/pro.svg" class="footer-icon"></div>
+         <div class="nav-label">Profile</div>
+      </a></li>
+   </ul>
+      </footer>
 	</section>
 
 
@@ -210,7 +246,22 @@
       <div data-role="main">
          <div class="profile"></div>
       </div>
-      <footer data-role="footer" data-template="#footer-template"></footer>
+     <footer data-role="footer">
+          <ul>
+      <li><a href="#recent-page">
+         <div class="nav-icon"><img src="images/loc.png" class="footer-icon"></div>
+         <div class="nav-label">Recent</div>
+      </a></li>
+      <li><a href="#list-page">
+         <div class="nav-icon"><img src="images/paw.svg" class="footer-icon"></div>
+         <div class="nav-label">List</div>
+      </a></li>
+      <li><a href="#user-profile-page">
+         <div class="nav-icon"><img src="images/pro_act.svg" class="footer-icon"></div>
+         <div class="nav-label-act">Profile</div>
+      </a></li>
+   </ul>
+      </footer>
    </section>
 
 
@@ -224,7 +275,7 @@
       <header data-role="header">
          <ul>
             <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
-            <li class="ui-title save-icon">Settings</li>
+            <li class="ui-title">Settings</li>
          </ul>
       </header>
       <div data-role="main">
@@ -271,7 +322,7 @@
          <ul>
             <li class="back-icon"><a href="#" data-rel="back"><img src="images/back.svg"></a></li>
             <li class="ui-title">Change Password</li>
-            <li class="save-icon"><a href="#" data-rel="back">Save</a></li>
+            <li><a href="#" data-rel="back" class="save-icon">Save</a></li>
          </ul>
       </header>
       <div data-role="main" style="padding:1em">
@@ -481,6 +532,7 @@
          <div class="message">Message</div>
       </div>
    </div>
+
    <script type="text/template" id="footer-template">
    <ul>
       <li><a href="#recent-page">

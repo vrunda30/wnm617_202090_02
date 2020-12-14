@@ -47,15 +47,16 @@ h6 {
 
 
 a {
-    color: #212121;
+    
   font-family: "SF Pro Display";
   text-decoration: none; 
 }
 
 a:hover {
-   color: #73C0C7;
   font-family: "SF Pro Display";
 }
+
+
 
 
 /* Layout Classes */
@@ -242,14 +243,17 @@ a:hover {
    overflow:hidden;
    position:relative;
    align-items: center;
-   background-color: #00737A;
+   background-color: #73C0C7;
+   box-shadow: 0 10px 12px -2px rgba(95,139,145,0.47);
+  
 }
 
 
 .ui-header .ui-title {
-  color: #FFFFFF;
+  color: #00737A;
   font-size: 22px;
   font-family: "SF Pro Display";
+  font-weight: 600;
   letter-spacing: 0;
   align-items: center;
   margin-left: 30px;
@@ -347,6 +351,7 @@ a:hover {
 .modal-body {
     background-color: var(--color-white);
     padding: 1em;
+    margin-bottom: 1em;
 }
 .modal-head, .modal-foot {
     background-color: #73C0C7;
@@ -413,14 +418,15 @@ a:hover {
 /* MODAL TOAST */
 .modal-toast {
    position: absolute;
-   width: 50%;
-   background-color: #e7ff3f;
+   width: 90%;
+   background-color: #D90504;
    box-shadow: 1px 1px 5px rgba(0,0,0,0.15);
    border-radius: 0.2em;
    padding: 1em;
    text-align: center;
    left: 50%;
    transition: all 0.3s;
+   color: #FFFFFF;
 }
 .modal-toast.top {
    top:1em;
@@ -513,8 +519,8 @@ a:hover {
   line-height: 24px;
   text-align: center;
   margin-top: 6px;
-
 }
+
 #animal-profile-page .profile-image {
    display:flex;
    align-items:center;
@@ -523,6 +529,19 @@ a:hover {
 #animal-profile-page .profile-image img {
      width: 100%;
     height: calc(100vw - 8em);
+}
+
+
+.profile-name2 {
+  height: 24px;
+  color: #212121;
+  font-family: "SF Pro Display";
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 6px;
 }
 
 
@@ -581,12 +600,23 @@ a:hover {
 .animallist-type,
 .animallist-breed {
    font-size:0.8em;
+   font-family: "SF Pro Display";
+  font-weight: 300;
+  line-height: 8px;
+  padding-top: 8px;
+
 }
 .animallist-name {
-   font-size:1.2em;
+  height: 24px;
+  color: #212121;
+  font-family: "SF Pro Display";
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: left;
+  padding-top: 8px;
 }
-
-
 
 
 
@@ -599,9 +629,6 @@ a:hover {
     padding: 0px 0.5em;
     font-weight:bold;
 }
-
-
-
 
 
 
@@ -619,6 +646,14 @@ a:hover {
    line-height:calc(var(--header-height) * 0.3);
    font-size:0.7em;
    color: #FFF;
+}
+
+
+.nav-label-act {
+   line-height:calc(var(--header-height) * 0.3);
+   font-size: 0.7em;
+   font-weight: 800;
+   color: #00737A;
 }
 
 
@@ -665,6 +700,7 @@ a:hover {
   margin-left: 85%;
   position: absolute;
   list-style-type:none;
+  margin-top: 3px;
 }
 
 .back-icon{
@@ -674,7 +710,9 @@ a:hover {
 }
 
 .save-icon{
-  line-height: 36px;
+  line-height: 38px;
+  font-size: 20px;
+  color: #FFFFFF;
   list-style-type:none;
 }
 
@@ -742,7 +780,18 @@ a:hover {
   border: 1px solid rgba(32,53,128,0.16);
   border-radius: 10px; 
   background-color: #FFFFFF;
+}
+
+.card20 {
+  box-sizing: border-box;
+  height: auto;
+  width: 348px;
+  border: 1px solid rgba(32,53,128,0.16);
+  border-radius: 10px; 
+  background-color: #FFFFFF;
   margin: 1em;
+  background-image: url(../images/confe.gif);
+  background-size: 348px 220px;
 }
 
 .modal-card {
@@ -756,7 +805,6 @@ a:hover {
 
 
 .setting { 
-  color: #212121;
   padding-top: 8px;
   font-size: 16px;
   font-weight: 500;
@@ -768,6 +816,7 @@ a:hover {
   margin-top: 1em;
   padding-left: 40px;
 }
+
 
 ul {
     padding-inline-start: 0px;
@@ -806,3 +855,12 @@ ul {
   margin-bottom: 40px;
   padding: 16px;
 }
+
+li.back-icon {
+    margin-top: 6px;
+}
+
+a.form-button.js-animal-jump {
+    margin-top: 1em;
+}
+
