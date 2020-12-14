@@ -16,8 +16,8 @@ const checkSignupForm = () => {
          if(d.error) {
             throw d.error;
          }
-         console.log(d.id)
-         $.mobile.navigate("#signin-page");
+         console. log(d.id)
+         $.mobile.navigate("#Signup-confirmation");
       })
    }
 }

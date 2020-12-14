@@ -58,7 +58,7 @@ const ListPage = async() => {
    console.log(d)
 
    $("#list-page .animallist")
-      .html(d.result.length?makeAnimalList(d.result):'Hey Dummy, add an animal.');
+      .html(d.result.length?makeAnimalList(d.result):'Please add a dog');
 }
 
 
@@ -163,12 +163,12 @@ const LocationAddPage = async() => {
       let posFromClick = {
          lat:e.latLng.lat(),
          lng:e.latLng.lng(),
-         icon:"img/icon/marker.svg"
+         icon:"images/marker.svg"
       };
       let posFromCenter = {
          lat:map.getCenter().lat(),
          lng:map.getCenter().lng(),
-         icon:"img/icon/marker.svg"
+         icon:"imgages/marker.svg"
       };
 
       $("#location-add-lat").val(posFromClick.lat)

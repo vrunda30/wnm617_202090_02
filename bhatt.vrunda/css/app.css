@@ -33,7 +33,7 @@
 body {
    margin:0;
    font-size:100%;
-   font-family:var(--font-sans);
+   font-family:"SF Pro Display";
 }
 
 h1,
@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-   font-family:var(--font-serif);
+   font-family:"SF Pro Display";
 }
 
 
@@ -195,7 +195,9 @@ a:hover {
 }
 
 #signin-page [data-role='main'],
-#signup-page [data-role='main']{
+#signup-page [data-role='main'],
+#Signup-confirmation [data-role='main']
+{
   background-image: url(../images/dgback.png);
   background-position: center;
   background-size: cover;
@@ -385,7 +387,7 @@ a:hover {
    width:100%;
 }
 .modal-drawer.top { top:0; transform:translateY(-100%); }
-.modal-drawer.bottom { top:28em; transform:translateY(50%); }
+.modal-drawer.bottom { top:24em; transform:translateY(50%); }
 
 .modal.active .modal-drawer {
    transform:translate(0);
@@ -789,4 +791,15 @@ ul {
   line-height: 24px;
   text-align: center;
   margin-top: 12px;
+}
+
+.cong{
+  color: #00737A;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 20px;
 }

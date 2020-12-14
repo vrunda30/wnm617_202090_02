@@ -1,23 +1,18 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
+   <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+         <title>Dog in the Park</title>
 
-   <meta charset="UTF-8">
-
-   <meta name="apple-mobile-web-app-capable" content="yes">
-   <meta name="mobile-web-app-capable" content="yes">
-
-   <link rel="apple-touch-icon" href="./site_logo.png">
-   <link rel="icon" href="./site_logo.png">
-
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Dog in the Park</title>
-
-  <link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
-  <link rel="stylesheet" href="css/app.css">
+         <link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
+         <link rel="stylesheet" href="css/app.css">
 
    <script src="lib/js/jquery-2.2.4.min.js"></script>
-
+          
    <script src="js/functions.js"></script>
    <script src="js/forms.js"></script>
    <script src="js/maps.js"></script>
@@ -28,15 +23,12 @@
 
    <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiWAgbyIvk_EFmyaUiQc5Kg6i39MgZy4I" defer></script>   
-</head>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiWAgbyIvk_EFmyaUiQc5Kg6i39MgZy4I" defer></script>
+   </head>
 <body>
 
-
-
-
 	
-
+ 
 
 
 <!-- Sign in -->
@@ -47,9 +39,8 @@
          <div>
             <img src="images/logo.png" class="logo">
          </div>
-        
          <form id="signin-form" data-ajax="false">
-         	 <div class="card">
+         	<div class="card">
             <div class="form-control">
                <label for="signin-username" class="form-label">Username</label>
                <input id="signin-username" type="text" class="form-input" data-role="none" placeholder="Type your username">
@@ -65,9 +56,8 @@
                Don't have an account?
                <a href="#signup-page">Sign Up</a>
             </div>
-             </div>
+            </div>
          </form>
-        
       </div>
    </section>
 
@@ -81,8 +71,8 @@
 
    <section data-role="page" id="signup-page">
       <div data-role="main" class="display-flex flex-align-center flex-justify-center">
-         <form id="signup-form" data-ajax="false">
-         	<div class="card">
+            <DIV class="card">
+            <form id="signup-form" data-ajax="false">
             <div class="form-control">
                <label for="signup-username" class="form-label">Username</label>
                <input id="signup-username" type="text" class="form-input" data-role="none" placeholder="Type your username">
@@ -99,19 +89,50 @@
                <label for="signup-password-confirm" class="form-label">Confirm Password</label>
                <input id="signup-password-confirm" type="password" class="form-input" data-role="none" placeholder="Retype your password">
             </div>
-
             <div class="form-control">
                <input type="submit" class="form-button" value="Sign Up" data-role="none">
             </div>
-
             <div class="form-control signin-alt">
                Already have an account?
                <a href="#signin-page">Sign In</a>
             </div>
-        </div>
          </form>
+      </DIV>
       </div>
    </section>
+
+
+<!-- Sign up confirmation -->
+
+   <section data-role="page" id="Signup-confirmation">
+      <div data-role="main">
+         <div>
+            <img src="images/logo.png" class="logo">
+         </div>
+         <form id="signin-form" data-ajax="false">
+            <div class="card">
+            <div class="cong"><strong>Congratulations!</strong> You have created a new account. Please <strong>Sign in</strong> to continue</div> 
+            <div class="form-control">
+               <label for="signin-username" class="form-label">Username</label>
+               <input id="signin-username" type="text" class="form-input" data-role="none" placeholder="Type your username">
+            </div>
+            <div class="form-control">
+               <label for="signin-password" class="form-label">Password</label>
+               <input id="signin-password" type="password" class="form-input" data-role="none" placeholder="Type your password">
+            </div>
+            <div class="form-control">
+               <input type="submit" class="form-button" value="Sign In" data-role="none">
+            </div>
+            <div class="form-control signin-alt">
+               Don't have an account?
+               <a href="#signup-page">Sign Up</a>
+            </div>
+            </div>
+         </form>
+        
+      </div>
+   </section>
+   
 
 
 
