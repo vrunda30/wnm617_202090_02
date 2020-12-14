@@ -196,7 +196,7 @@ a:hover {
 
 #signin-page [data-role='main'],
 #signup-page [data-role='main'],
-#Signup-confirmation [data-role='main']
+#signin-con [data-role='main']
 {
   background-image: url(../images/dgback.png);
   background-position: center;
@@ -742,6 +742,7 @@ a:hover {
   border: 1px solid rgba(32,53,128,0.16);
   border-radius: 10px; 
   background-color: #FFFFFF;
+  margin: 1em;
 }
 
 .modal-card {
@@ -801,5 +802,6 @@ ul {
   letter-spacing: 0;
   line-height: 24px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
